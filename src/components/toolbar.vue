@@ -1,6 +1,6 @@
 <template>
   <div> 
-  <v-navigation-drawer style="width: 150px" v-model="drawer">
+  <v-navigation-drawer style="width: 170px" v-model="drawer">
       <v-list class="pt-0">
         <v-list-tile v-for="item in toolbarMenu" :key="item.title" @click="">
           <v-list-tile-content @click.stop="drawer = false">
@@ -8,7 +8,7 @@
             <v-list-tile-title>{{ item.title }}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile @click="">
+        <v-list-tile @click="" class="mt-5">
           <v-list-tile-content @click.stop="drawer = false">
             <v-list-tile-title>Свернуть</v-list-tile-title>
           </v-list-tile-content>

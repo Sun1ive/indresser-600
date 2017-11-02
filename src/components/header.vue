@@ -9,6 +9,7 @@
         <v-layout class="LC" align-center>
           <div class="myButton">Смотреть коллекцию</div>
         </v-layout>
+        <div class="mouse"></div>
       </v-container>
     </div>
   </header>
@@ -28,6 +29,14 @@
 .header
   background-image url('/static/img/header.jpg')
   min-height 930px
+  position relative
+  .mouse
+    background-image url('/static/img/mouse.png')
+    position absolute
+    left 17%
+    bottom 20%
+    width 15px
+    height 40px
   h1
     font-size 3rem
   .LC
