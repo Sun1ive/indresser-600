@@ -20,7 +20,7 @@
 <style scoped lang="stylus">
 .catalog
   background-image url('/static/img/catalog.jpg')
-  height 700px
+  height 600px
   .LC
     color #fff
     &:nth-child(1)

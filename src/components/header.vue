@@ -28,7 +28,7 @@
 <style scoped lang="stylus">
 .header
   background-image url('/static/img/header.jpg')
-  min-height 930px
+  min-height 1000px
   position relative
   .mouse
     background-image url('/static/img/mouse.png')
