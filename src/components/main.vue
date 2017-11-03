@@ -6,6 +6,8 @@
     <app-coatCategory></app-coatCategory>
     <app-jackets></app-jackets>
     <app-shortCoats></app-shortCoats>
+    <app-categories></app-categories>
+    <app-discount></app-discount>
   </main>
 </template>
 
@@ -13,6 +15,8 @@
 import catalog from './catalog'
 import aboutus from './aboutus'
 import coats from './coats'
+import categories from './categories'
+import discount from './discount'
 import coatCategory from './category/coats'
 import jackets from './category/jackets'
 import shortCoats from './category/shortCoats'
@@ -24,6 +28,8 @@ import shortCoats from './category/shortCoats'
       'app-coatCategory': coatCategory,
       'app-jackets': jackets,
       'app-shortCoats': shortCoats,
+      'app-categories': categories,
+      'app-discount': discount,
     }
   }
 </script>

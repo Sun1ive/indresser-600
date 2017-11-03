@@ -6,7 +6,7 @@
           <div class="flexWrapper">
             <h2>Пальто</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis harum repellendus earum excepturi tempore illo labore reprehenderit pariatur! Iste, quam ullam repellendus qui quas minus voluptatem. Eaque accusantium esse unde.</p>
-            <img src="/static/img/coat.jpg" alt="coat">
+            <img src="/static/img/shortCoat.jpg" alt="coat">
           </div>
         </v-flex>
         <v-flex xs12 sm6>
