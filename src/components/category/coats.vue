@@ -24,14 +24,14 @@ export default {
   data() {
     return {
       coats: [
-        '/static/slider/1.jpg',
-        '/static/slider/2.jpg',
-        '/static/slider/6.jpg',
-        '/static/slider/3.jpg',
-        '/static/slider/4.jpg',
-        '/static/slider/7.jpg',
-        '/static/slider/5.jpg',
-        '/static/slider/8.jpg',
+        '/static/slider/coatsLong/1.jpg',
+        '/static/slider/coatsLong/2.jpg',
+        '/static/slider/coatsLong/6.jpg',
+        '/static/slider/coatsLong/3.jpg',
+        '/static/slider/coatsLong/4.jpg',
+        '/static/slider/coatsLong/7.jpg',
+        '/static/slider/coatsLong/5.jpg',
+        '/static/slider/coatsLong/8.jpg',
       ]
     };
   }
@@ -39,18 +39,5 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.coat
-  .layout
-    min-height 700px
-    .flexWrapper
-      width 80%
-      margin 0 auto
-      p
-        width 60%
-        margin 2rem 0
-
-.carousel
-  height 800px
-  &__item
-    transition 1.8s ease-in-out
+@import '../../stylus/category.styl'
 </style>
