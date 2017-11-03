@@ -44,6 +44,11 @@ export default {
         },
       ]
     }
+  },
+  mounted () {
+    let width = window.innerWidth;
+    console.log(width);
+    width <= 1024 ? this.drawer = false : this.drawer = true
   }
 };
 </script>

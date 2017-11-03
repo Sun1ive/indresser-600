@@ -57,11 +57,18 @@
     p
       text-shadow 1px 1px 1px #fff
       text-align center
+      width 70%
+      margin 0 auto
     .LC
       &:nth-child(2)
         justify-content center
 
-@media (max-width 700px)
+@media (max-width: 1024px)
+  .header
+    background-image url('/static/img/header/header3.png')
+
+
+@media (max-width 600px)
   .header
     background-image url('/static/img/header/header2.png')
     min-height 600px
