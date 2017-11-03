@@ -46,4 +46,9 @@ import catalog from './modals/getCatalog'
     .myButton
       color #fff
       border-color #fff
+
+@media (max-width 1150px)
+  .catalog
+    .LC
+      justify-content center
 </style>
