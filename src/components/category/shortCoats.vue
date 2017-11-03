@@ -27,12 +27,10 @@ export default {
       coats: [
         '/static/slider/coatsShort/1.jpg',
         '/static/slider/coatsShort/2.jpg',
-        '/static/slider/coatsShort/6.jpg',
         '/static/slider/coatsShort/3.jpg',
         '/static/slider/coatsShort/4.jpg',
-        '/static/slider/coatsShort/7.jpg',
         '/static/slider/coatsShort/5.jpg',
-        '/static/slider/coatsShort/8.jpg'
+        '/static/slider/coatsShort/6.jpg'
       ]
     };
   }

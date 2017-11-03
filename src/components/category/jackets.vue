@@ -30,9 +30,7 @@ export default {
         '/static/slider/jacket/6.jpg',
         '/static/slider/jacket/3.jpg',
         '/static/slider/jacket/4.jpg',
-        '/static/slider/jacket/7.jpg',
         '/static/slider/jacket/5.jpg',
-        '/static/slider/jacket/8.jpg',
       ]
     };
   }
