@@ -5,6 +5,7 @@
     <app-coats></app-coats>
     <app-coatCategory></app-coatCategory>
     <app-jackets></app-jackets>
+    <app-shortCoats></app-shortCoats>
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import aboutus from './aboutus'
 import coats from './coats'
 import coatCategory from './category/coats'
 import jackets from './category/jackets'
+import shortCoats from './category/shortCoats'
   export default {
     components: {
       'app-catalog': catalog,
@@ -21,6 +23,7 @@ import jackets from './category/jackets'
       'app-coats': coats,
       'app-coatCategory': coatCategory,
       'app-jackets': jackets,
+      'app-shortCoats': shortCoats,
     }
   }
 </script>
