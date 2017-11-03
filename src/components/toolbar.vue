@@ -3,7 +3,7 @@
   <v-navigation-drawer style="width: 170px" v-model="drawer">
       <v-list class="pt-0">
         <v-list-tile v-for="item in toolbarMenu" :key="item.title" @click="">
-          <v-list-tile-content @click.stop="drawer = false">
+          <v-list-tile-content v-scroll-to="item.scrollTo">
           <!-- <v-list-tile-content @click.stop="drawer = false" v-scroll-to="item.scrollTo"> -->
             <v-list-tile-title>{{ item.title }}</v-list-tile-title>
           </v-list-tile-content>
@@ -34,13 +34,13 @@ export default {
       isFixed: false,
       toolbarMenu: [
         {
-          title: 'Пальто', scrollTo: ''
+          title: 'Пальто', scrollTo: '.coats'
         },
         {
-          title: 'Жилет', scrollTo: ''
+          title: 'Жилет', scrollTo: '.jacket'
         },
         {
-          title: 'Пальто', scrollTo: ''
+          title: 'Пальто', scrollTo: '.shortCoats'
         },
       ]
     }

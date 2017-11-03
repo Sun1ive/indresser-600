@@ -2,14 +2,14 @@
   <div class="wrapper">
     <v-container fluid class="categories">
       <v-layout>
-        <v-flex xs12 sm6 lg6>
+        <v-flex xs12 sm6 lg6 v-scroll-to="'.coats'">
           <h2>Пальто</h2>
           <div class="myButton">Подробнее</div>
         </v-flex>
-        <v-flex xs12 lg3>
+        <v-flex xs12 lg3 v-scroll-to="'.jacket'">
           <h2>Пальто</h2>
         </v-flex>
-        <v-flex xs12 lg3>
+        <v-flex xs12 lg3 v-scroll-to="'.shortCoats'">
           <h2>Пальто</h2>
         </v-flex>
       </v-layout>
@@ -35,6 +35,7 @@
       transition .4s ease
       position relative
       overflow hidden
+      cursor pointer
       &:hover
         transform scale(1.1)
       .myButton
@@ -45,15 +46,15 @@
         border-color #fff
         color #fff
       &:first-child
-        background-image url('/static/img/coat.jpg')
+        background-image url('/static/img/categories/3.jpg')
         align-items center
       &:nth-child(2)
-        background-image url('/static/img/jacket.jpg')
+        background-image url('/static/img/categories/2.jpg')
         align-items flex-end
         h2
           margin-bottom 2rem
       &:last-child
-        background-image url('/static/img/shortCoat.jpg')
+        background-image url('/static/img/categories/1.jpg')
         align-items flex-end
         h2
           margin-bottom 2rem

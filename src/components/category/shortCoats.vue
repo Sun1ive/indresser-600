@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <v-container fluid class="shotCoats">
+    <v-container fluid class="shortCoats">
        <v-layout align-center>
         <v-flex xs12 sm6>
           <div class="flexWrapper">
@@ -39,4 +39,7 @@ export default {
 
 <style scoped lang="stylus">
 @import '../../stylus/category.styl'
+
+.flexWrapper
+  background-image url('/static/img/333.jpg')
 </style>

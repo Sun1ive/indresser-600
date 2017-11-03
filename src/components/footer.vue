@@ -8,6 +8,21 @@
             <li><a href="#" class="fa fa-facebook"></a></li>
           </ul>
         </v-flex>
+        <v-flex xs12 sm6 lg8>
+          <ul class="footerMenu">
+            <li>Пальто</li>
+            <li>Жилеты</li>
+            <li>Пальто</li>
+            <li>О нас</li>
+            <li>Контакты</li>
+          </ul>
+        </v-flex>
+        <v-flex xs12 sm6 lg3>
+          <ul class="phone">
+            <li>+380 98 020 2092</li>
+            <li>+380 98 020 2092</li>
+          </ul>
+        </v-flex>
       </v-layout>
     </v-container>
   </div>
@@ -28,11 +43,15 @@ ul
   list-style none
   display flex
   padding-left 0
+  color #fff
+  justify-content space-around
   a
     text-decoration none
     color #fff
     font-size 2rem
 
-.socials
-  justify-content space-around
+.footerMenu
+  color #fff
+  font-size 1.1rem
+  font-family Gilroy-Light, Arial, Helvetica, sans-serif
 </style>

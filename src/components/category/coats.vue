@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <v-container fluid class="coat">
+    <v-container fluid class="coats">
       <v-layout align-center>
         <v-flex xs12 sm6>
           <div class="flexWrapper">
@@ -27,16 +27,16 @@ export default {
       coats: [
         '/static/slider/coatsLong/1.jpg',
         '/static/slider/coatsLong/2.jpg',
-        '/static/slider/coatsLong/6.jpg',
-        '/static/slider/coatsLong/12.jpg',
         '/static/slider/coatsLong/3.jpg',
         '/static/slider/coatsLong/4.jpg',
-        '/static/slider/coatsLong/7.jpg',
-        '/static/slider/coatsLong/10.jpg',
         '/static/slider/coatsLong/5.jpg',
+        '/static/slider/coatsLong/6.jpg',
+        '/static/slider/coatsLong/7.jpg',
         '/static/slider/coatsLong/8.jpg',
         '/static/slider/coatsLong/9.jpg',
+        '/static/slider/coatsLong/10.jpg',
         '/static/slider/coatsLong/11.jpg',
+        '/static/slider/coatsLong/12.jpg',
       ]
     };
   }
@@ -45,4 +45,7 @@ export default {
 
 <style scoped lang="stylus">
 @import '../../stylus/category.styl'
+
+.flexWrapper
+  background-image url('/static/img/111.jpg')
 </style>
