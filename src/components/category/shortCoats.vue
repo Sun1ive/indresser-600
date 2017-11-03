@@ -2,14 +2,14 @@
   <div class="wrapper">
     <v-container fluid class="shortCoats">
        <v-layout align-center>
-        <v-flex xs12 sm6>
+        <v-flex xs12 sm12 md6 lg6>
           <div class="flexWrapper">
             <h2>Пальто</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis harum repellendus earum excepturi tempore illo labore reprehenderit pariatur! Iste, quam ullam repellendus qui quas minus voluptatem. Eaque accusantium esse unde.</p>
             <img src="/static/img/shortCoat.jpg" alt="coat">
           </div>
         </v-flex>
-        <v-flex xs12 sm6>
+        <v-flex xs12 sm12 md6 lg6>
           <v-carousel hide-controls>
             <v-carousel-item v-for="(item, i) in coats" :key="i" :src="item"></v-carousel-item>
             <div class="myButton">Купить</div>

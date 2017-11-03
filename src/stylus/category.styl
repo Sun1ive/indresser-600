@@ -6,7 +6,6 @@
     align-items: center
     flex-direction: column
     min-height: 800px
-
     p
       width 60%
       margin 2rem 0
@@ -14,6 +13,7 @@
 .carousel
   height 800px
   position relative
+  width 100%
   .myButton
     position absolute
     top 85%
@@ -24,3 +24,9 @@
     color #fff
   &__item
     transition 1.8s ease-in-out
+
+@media (max-width 700px)
+  .layout
+    flex-direction column
+  .carousel
+    width 670px

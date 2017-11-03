@@ -32,4 +32,13 @@
     &:nth-child(1)
       min-height 200px
       align-items flex-end
+
+@media (max-width: 1000px)
+  .localWrapper
+    align-items center
+    justify-content center
+    color #fff
+    text-align center
+    .myButton
+      border-color #fff
 </style>

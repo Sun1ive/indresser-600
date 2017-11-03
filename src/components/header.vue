@@ -53,9 +53,7 @@
     h1
       font-size 3rem
       text-align center
-      text-shadow 1px 1px 1px #fff
     p
-      text-shadow 1px 1px 1px #fff
       text-align center
       width 70%
       margin 0 auto
