@@ -5,7 +5,7 @@
         <v-flex xs12 sm6>
           <v-carousel hide-controls>
             <v-carousel-item v-for="(item, i) in jackets" :key="i" :src="item"></v-carousel-item>
-            <div class="myButton">Посмотреть</div>
+            <div class="myButton">Купить</div>
           </v-carousel>
         </v-flex>
         <v-flex xs12 sm6>

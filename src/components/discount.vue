@@ -2,7 +2,7 @@
   <div class="wrapper">
     <v-container fluid class="discountForm">
       <v-layout class="LC" justify-end align-center>
-        <v-form class="form">
+        <v-form class="form" @submit.prevent="submit">
           <h2>Получите скидку 30%</h2>
           <v-text-field required v-model="userData.name" label="Ваше имя"></v-text-field>
           <v-text-field required v-model="userData.phone" label="Ваш телефон"></v-text-field>
@@ -19,6 +19,16 @@
     data () {
       return {
         userData: {
+          name: '',
+          phone: '',
+          email: ''
+        }
+      }
+    },
+    methods: {
+      submit () {
+        alert(`submitted ${this.userData.name}`);
+        this.userData = {
           name: '',
           phone: '',
           email: ''

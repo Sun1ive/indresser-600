@@ -4,8 +4,8 @@
       <v-layout align-center>
         <v-flex xs12 sm6 lg1>
           <ul class="socials">
-            <li><a href="#" class="fa fa-facebook"></a></li>
-            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" target="" class="fa fa-facebook"></a></li>
+            <li><a href="#" target="" class="fa fa-instagram"></a></li>
           </ul>
         </v-flex>
         <v-flex xs12 sm6 lg8>
