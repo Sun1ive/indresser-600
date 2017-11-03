@@ -41,5 +41,4 @@ export default {
 
 <style scoped lang="stylus">
 @import '../../stylus/category.styl'
-
 </style>

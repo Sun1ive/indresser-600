@@ -29,10 +29,14 @@
     min-height 500px
     .flex
       background-size cover
-      position relative
       display flex
       color #fff
       justify-content center
+      transition .4s ease
+      position relative
+      overflow hidden
+      &:hover
+        transform scale(1.1)
       .myButton
         position absolute
         top 80%
@@ -46,7 +50,11 @@
       &:nth-child(2)
         background-image url('/static/img/jacket.jpg')
         align-items flex-end
+        h2
+          margin-bottom 2rem
       &:last-child
         background-image url('/static/img/shortCoat.jpg')
         align-items flex-end
+        h2
+          margin-bottom 2rem
 </style>
