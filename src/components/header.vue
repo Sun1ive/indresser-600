@@ -3,7 +3,7 @@
     <div class="wrapper">
       <v-container fluid class="header">
         <v-layout class="LC" column justify-end>
-          <h1>Платья Осень-Зима 2017/2018</h1>
+          <h1>Верхняя одежда Осень-Зима 2017/2018</h1>
           <p>Вы ищете женственное и удобное платье или модное пальто? Тогда выбирайте наши практичные и стильные женские вещи</p>
         </v-layout>
         <v-layout class="LC" align-center>
@@ -38,7 +38,8 @@
     width 15px
     height 40px
   h1
-    font-size 3rem
+    font-size 4rem
+    margin 1rem 0
   .LC
     &:nth-child(1)
       min-height 400px

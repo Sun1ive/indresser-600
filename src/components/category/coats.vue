@@ -1,19 +1,18 @@
 <template>
   <div class="wrapper">
     <v-container fluid class="coat">
-      <v-layout justify-center align-center>
-        <v-flex sm6>
-          <h2>Пальто</h2>
-          <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed unde laborum, atque voluptate, tenetur nostrum ratione dolores rerum animi a voluptas nihil illum porro perferendis. Voluptatibus in repudiandae perspiciatis ut!</p>
-          <div class="imgWrapper">
+      <v-layout align-center>
+        <v-flex xs12 sm6>
+          <div class="flexWrapper">
+            <h2>Пальто</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis harum repellendus earum excepturi tempore illo labore reprehenderit pariatur! Iste, quam ullam repellendus qui quas minus voluptatem. Eaque accusantium esse unde.</p>
             <img src="/static/img/coat.jpg" alt="coat">
           </div>
         </v-flex>
-        <v-flex sm3>
-          <v-carousel hide-controls class="mt-4">
+        <v-flex xs12 sm6>
+          <v-carousel hide-controls>
             <v-carousel-item v-for="(item, i) in coats" :key="i" :src="item"></v-carousel-item>
           </v-carousel>
-            <div class="myButton mt-5">Подробнее</div>
         </v-flex>
       </v-layout>
     </v-container>
@@ -41,20 +40,17 @@ export default {
 
 <style scoped lang="stylus">
 .coat
-  .imgWrapper
-    max-width 400px
-    max-height 400px
-    margin 2rem auto
-    img
-      width 100%
   .layout
-    min-height 900px
-    .flex
-      min-height 620px
-  .text
-  h2
-    max-width: 400px
-    margin: 0 auto
-  .carousel__item
-    transition .8s
+    min-height 700px
+    .flexWrapper
+      width 80%
+      margin 0 auto
+      p
+        width 60%
+        margin 2rem 0
+
+.carousel
+  height 800px
+  &__item
+    transition 1.8s ease-in-out
 </style>

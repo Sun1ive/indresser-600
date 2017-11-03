@@ -2,7 +2,7 @@
   <div class="wrapper">
     <v-container fluid class="coat">
       <v-layout class="localWrapper">
-        <h2>Пальто Осень-Зима 2017/2018</h2>
+        <h2>Верхняя одежда Осень-Зима 2017/2018</h2>
       </v-layout>
       <v-layout class="localWrapper my-5">
         <v-flex sm12 sm10 md8 lg6>
