@@ -5,15 +5,31 @@
         <h2>Получить каталог</h2>
       </v-layout>
       <v-layout align-center class="LC">
-        <div class="myButton">Заказать каталог</div>
+        <div class="myButton" @click.stop="drawer = true">Заказать каталог</div>
       </v-layout>
     </v-container>
+    <v-dialog v-model="drawer" max-width="350">
+      <app-catalog @closeForm="closeForm"></app-catalog>
+    </v-dialog>
   </div>
 </template>
 
 <script>
+import catalog from './modals/getCatalog'
   export default {
-    
+    components: {
+      'app-catalog': catalog
+    },
+    data () {
+      return {
+        drawer: false
+      }
+    },
+    methods: {
+      closeForm () {
+        this.drawer = false
+      }
+    }
   }
 </script>
 

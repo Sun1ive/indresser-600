@@ -9,6 +9,7 @@ import {
   VForm,
   VTextField,
   VCarousel,
+  VDialog,
   transitions
 } from 'vuetify';
 import './stylus/main.styl';
@@ -27,6 +28,7 @@ Vue.use(Vuetify, {
     VForm,
     VTextField,
     VCarousel,
+    VDialog,
     transitions
   }
 });
