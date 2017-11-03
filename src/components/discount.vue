@@ -10,6 +10,9 @@
           <button class="myButton" type="submit">Получить скидку</button>
         </v-form>
       </v-layout>
+      <div class="circle">
+        <div class="disc">30%</div>
+      </div>
     </v-container>
   </div>
 </template>
@@ -41,6 +44,7 @@
 <style scoped lang="stylus">
 .discountForm
   background-image url('/static/img/formbg.png')
+  position relative
   .LC
     min-height 490px
     color #fff
@@ -50,4 +54,21 @@
         font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
       .myButton
         border-color #fff
+
+.circle
+  width 300px
+  height 300px
+  border-radius 50%
+  background #fff
+  position absolute
+  left 5%
+  top 50%
+  transform translate(-50%, -50%)
+  .disc
+    color red
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%,-50%)
+    font-size 4rem
 </style>

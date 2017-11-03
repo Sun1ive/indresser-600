@@ -27,7 +27,8 @@
 
 <style scoped lang="stylus">
 .header
-  background-image url('/static/img/header.jpg')
+  background-image url('/static/img/header/header.png')
+  background-position-x right
   min-height 1000px
   position relative
   .mouse
@@ -45,4 +46,27 @@
       min-height 400px
     &:nth-child(2)
       min-height 200px
+
+@media (max-width: 1440px)
+  .header
+    background-image url('/static/img/header/header1.png')
+    h1
+      font-size 3rem
+      text-align center
+      text-shadow 1px 1px 1px #fff
+    p
+      text-shadow 1px 1px 1px #fff
+      text-align center
+    .LC
+      &:nth-child(2)
+        justify-content center
+
+@media (max-width 700px)
+  .header
+    background-image url('/static/img/header/header2.png')
+    min-height 600px
+    h1
+      font-size 2rem
+    .mouse
+      display none
 </style>
