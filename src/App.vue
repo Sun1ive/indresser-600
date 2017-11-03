@@ -3,12 +3,14 @@
     <app-toolbar></app-toolbar>
     <app-header></app-header>
     <app-main></app-main>
+    <app-footer></app-footer>
   </v-app>
 </template>
 
 <script>
 import toolbar from './components/toolbar'
 import header from './components/header'
+import footer from './components/footer'
 import main from './components/main'
 
 
@@ -17,6 +19,7 @@ import main from './components/main'
       'app-toolbar': toolbar,
       'app-header': header,
       'app-main': main,
+      'app-footer': footer,
     },
     data () {
       return {

@@ -6,8 +6,6 @@ import {
   VApp,
   VNavigationDrawer,
   VList,
-  VBtn,
-  VIcon,
   VGrid,
   VToolbar,
   VForm,
@@ -16,6 +14,7 @@ import {
   transitions
 } from 'vuetify'
 import './stylus/main.styl'
+import '../static/css/font-awesome.min.css'
 
 import App from './App'
 
@@ -24,8 +23,6 @@ Vue.use(Vuetify, {
     VApp,
     VNavigationDrawer,
     VList,
-    VBtn,
-    VIcon,
     VGrid,
     VToolbar,
     VForm,

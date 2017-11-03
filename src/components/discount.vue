@@ -35,6 +35,9 @@
     min-height 490px
     color #fff
     .form
+      font-family Gilroy-Light, Arial, Helvetica, sans-serif
+      h2
+        font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
       .myButton
         border-color #fff
 </style>
