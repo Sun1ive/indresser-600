@@ -3,7 +3,7 @@
     <v-layout justify-center align-center>
       <v-form class="Form" @submit.prevent="submit">
         <v-text-field v-model="email" label="Введите Ваш e-mail"></v-text-field>
-        <button type="submit" class="myButton">Заказать</button>
+        <button type="submit" class="myButton">Отправить</button>
       </v-form>
     </v-layout>
   </v-container>
@@ -28,7 +28,7 @@
 
 <style scoped lang="stylus">
 .catalogModal
-  background-color rgba(#000, .6)
+  background-color #fff
   .Form
     min-height 100px
     display flex
@@ -36,7 +36,4 @@
     align-items center
     flex-direction column
     padding 1rem
-    .myButton
-      border-color #fff
-      color #fff
 </style>

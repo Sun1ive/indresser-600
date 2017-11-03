@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <footer class="wrapper">
     <v-container fluid class="footer">
       <v-layout align-center>
         <v-flex xs12 sm6 lg1>
@@ -25,7 +25,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-  </div>
+  </footer>
 </template>
 
 <script>

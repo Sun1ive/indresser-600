@@ -5,7 +5,7 @@
         <v-flex xs12 sm6>
           <v-carousel hide-controls>
             <v-carousel-item v-for="(item, i) in jackets" :key="i" :src="item"></v-carousel-item>
-            <div class="myButton">Купить</div>
+            <div class="myButton" @click.stop="drawer = true">Купить</div>
           </v-carousel>
         </v-flex>
         <v-flex xs12 sm6>
@@ -17,13 +17,21 @@
         </v-flex>
       </v-layout>
     </v-container>
+    <v-dialog max-width="1000" v-model="drawer">
+      <app-order @closeForm="closeForm"></app-order>
+    </v-dialog>
   </div>
 </template>
 
 <script>
+import order from '../modals/orderForm'
 export default {
+  components: {
+    'app-order': order
+  },
   data() {
     return {
+      drawer: false,
       jackets: [
         '/static/slider/jacket/1.jpg',
         '/static/slider/jacket/2.jpg',
@@ -33,6 +41,11 @@ export default {
         '/static/slider/jacket/5.jpg',
       ]
     };
+  },
+  methods: {
+    closeForm () {
+      this.drawer = false
+    }
   }
 };
 </script>
