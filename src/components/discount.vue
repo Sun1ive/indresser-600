@@ -4,9 +4,9 @@
       <v-layout class="LC" justify-end align-center>
         <v-form class="form" @submit.prevent="submit">
           <h2>Получите скидку 30%</h2>
-          <v-text-field required v-model="userData.name" label="Ваше имя"></v-text-field>
-          <v-text-field required v-model="userData.phone" label="Ваш телефон"></v-text-field>
-          <v-text-field required v-model="userData.email" label="Ваш e-mail"></v-text-field>
+          <v-text-field ref="input" style="color: #fff !important" v-model="userData.name" label="Ваше имя"></v-text-field>
+          <v-text-field ref="input" style="color: #fff !important" v-model="userData.phone" label="Ваш телефон"></v-text-field>
+          <v-text-field ref="input" style="color: #fff !important" v-model="userData.email" label="Ваш e-mail"></v-text-field>
           <button class="myButton" type="submit">Получить скидку</button>
         </v-form>
       </v-layout>
@@ -30,12 +30,13 @@
     },
     methods: {
       submit () {
-        alert(`submitted ${this.userData.name}`);
+/*         alert(`submitted ${this.userData.name}`);
         this.userData = {
           name: '',
           phone: '',
           email: ''
-        }
+        } */
+        console.log(this.$refs.input.$refs.input.offsetParent);
       }
     }
   }
@@ -71,4 +72,5 @@
     left 50%
     transform translate(-50%,-50%)
     font-size 4rem
+
 </style>

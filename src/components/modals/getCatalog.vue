@@ -2,7 +2,7 @@
   <v-container fluid class="catalogModal">
     <v-layout justify-center align-center>
       <v-form class="Form" @submit.prevent="submit">
-        <v-text-field v-model="email" label="Введите Ваш e-mail"></v-text-field>
+        <v-text-field type="email" style="color: #999 !important" required v-model="email" label="Введите Ваш e-mail"></v-text-field>
         <button type="submit" class="myButton">Отправить</button>
       </v-form>
     </v-layout>
@@ -18,8 +18,9 @@
     },
     methods: {
       submit () {
-        alert(`Submitted ${this.email}`);
+        // alert(`Submitted ${this.email}`);
         this.email = '';
+        window.location = 'https://dresses.indresser.com';
         this.$emit('closeForm');
       }
     }
