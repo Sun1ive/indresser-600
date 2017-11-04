@@ -61,6 +61,10 @@
       &:nth-child(2)
         justify-content center
 
+@media (max-width 1300px)
+  .header
+    background-image url('/static/img/header/header1280.png')
+
 @media (max-width: 1024px)
   .header
     background-image url('/static/img/header/header3.png')
