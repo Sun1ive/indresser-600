@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <v-container fluid grid-list-xl>
+    <v-container fluid grid-list-xl class="about">
       <v-layout class="LC my-5">
         <h2>О бренде</h2>
       </v-layout>
