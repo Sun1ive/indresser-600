@@ -79,7 +79,7 @@ ul
       transition .4s ease-in-out
       color red
   
-@media (max-width 700px)
+@media (max-width 600px)
   .footer
     .layout
       flex-direction column
