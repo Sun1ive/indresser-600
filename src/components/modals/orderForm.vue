@@ -51,11 +51,12 @@
   padding 1rem 6rem
   min-height 400px
   position relative
+  font-size responsive 1rem 2rem
   .myButton
     height 50px
     margin-top 5rem
   h2
-    font-size 3rem
+    font-size responsive 1.5rem 3rem
   .close
     background-image url('/static/img/close.svg')
     position absolute
@@ -68,4 +69,14 @@
     transition .4s
     &:hover
       opacity .8
+
+@media (max-width 430px)
+  .orderForm
+    padding 1rem 2rem
+    min-height 300px
+    .myButton
+      margin-top 3rem
+  .flex
+    img
+      display none
 </style>

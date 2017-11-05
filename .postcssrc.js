@@ -4,8 +4,7 @@ module.exports = {
   "plugins": {
     // to edit target browsers: use "browserslist" field in package.json
     "autoprefixer": {},
-    'rucksack-css': {
-      "easings": true,
-    },
+    "rucksack-css": {},
+    "cssnano": {},
   }
 }

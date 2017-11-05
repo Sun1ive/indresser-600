@@ -27,7 +27,8 @@
 
 <style scoped lang="stylus">
 .header
-  background-image url('/static/img/header/header.png')
+  background url('/static/img/header/header.png')
+  background-repeat no-repeat
   background-position-x right
   min-height 1000px
   position relative
