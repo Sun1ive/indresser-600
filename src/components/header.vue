@@ -5,7 +5,7 @@
         <v-layout class="LC" align-center>
           <v-flex sm10 lg5>
             <h1>Верхняя одежда Осень-Зима 2017/2018</h1>
-            <p>Вы ищете женственное и удобное платье или модное пальто? Тогда выбирайте наши практичные и стильные женские вещи</p>
+            <p>Иногда так и хочется надеть что-то сногсшибательное, что бы на тебя все обращали внимание и восторгались. У нас такое есть!</p>
           </v-flex>
         </v-layout> 
        <!-- <v-layout class="LC" align-center>
@@ -50,6 +50,8 @@ import catalog from './modals/getCatalog'
   background-position-x right
   min-height 1000px
   position relative
+  h1
+    font-size responsive 3rem 4rem
   .mouse
     background-image url('/static/img/mouse.png')
     position absolute
@@ -87,7 +89,7 @@ import catalog from './modals/getCatalog'
 @media (max-width: 1440px)
   .header
     h1
-      font-size 3rem
+      font-size responsive 2.5rem 3rem
       text-align center
     p
       text-align center

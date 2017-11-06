@@ -98,11 +98,11 @@ export default {
 
 .fixed
   position fixed
-  opacity .1
+  opacity 1
   transition .5s ease
   z-index 9
   background-color #fff
-  animation fade 1s ease
+  // animation fade 1s ease
   &:hover
     opacity 1
 
@@ -110,14 +110,4 @@ export default {
   font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
   color red
   font-size responsive 1.8rem 2.2rem
-
-
-@keyframes fade {
-  from {
-    opacity 0
-  } to {
-    opacity .1
-  }
-}
-
 </style>

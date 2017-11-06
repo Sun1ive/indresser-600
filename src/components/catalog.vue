@@ -58,4 +58,21 @@ import catalog from './modals/getCatalog'
       &:nth-child(3)
         background-image url('/static/img/catalog/1.jpg')
         background-size cover
+
+@media (max-width 600px)
+  .catalog
+    .layout
+      flex-direction column
+      .flex
+        min-height 300px
+        background-size contain
+        &:first-child
+          background-image url('/static/img/catalog/3low.jpg')
+      .myButton
+        left 50%
+        transform translate(-50%, -50%)
+        color #fff
+        border-color #fff
+        &:hover
+          border-color #000
 </style>

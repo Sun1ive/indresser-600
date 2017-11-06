@@ -4,8 +4,8 @@
       <v-layout align-center>
         <v-flex xs12 sm12 md6 lg6>
           <div class="flexWrapper">
-            <h2>Пальто</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis harum repellendus earum excepturi tempore illo labore reprehenderit pariatur! Iste, quam ullam repellendus qui quas minus voluptatem. Eaque accusantium esse unde.</p>
+            <h2>Пальто длинное</h2>
+            <p class="text-xs-center">Демисезонное пальто прямого кроя из мягкого кашемира - неизменная вещь в женском гардеробе. <br> А у тебя уже такое есть?</p>
             <img src="/static/img/coat.jpg" alt="coat">
           </div>
         </v-flex>
