@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import order from '../modals/orderForm'
+import order from '../modals/orderShort'
 export default {
   components: {
     'app-order': order

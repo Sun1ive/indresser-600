@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-layout>
       <v-flex>
-        <img src="/static/img/order.png" alt="">
+        <img src="/static/img/orderCoat.png" alt="">
       </v-flex>
       <v-form class="orderForm" @submit.prevent="submit">
         <h2>Заполните заказ</h2>
@@ -30,7 +30,7 @@
 /*       Email.send(
         `coats@indresser.com`,
         'sunliveua@gmail.com',
-        'Заказ с сайта landing.indresser.com',
+        'Заказ пальто с сайта landing.indresser.com',
         `Пользователь: ${this.userData.name},
         Почта: ${this.userData.email}`,
         'mail.adm.tools',

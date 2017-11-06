@@ -20,7 +20,7 @@
       </v-list>
       <app-scroll></app-scroll>
     </v-navigation-drawer>
-    <v-toolbar :fixed="isFixed">
+    <v-toolbar>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>
         <img class="logo" src="/static/img/logo1.png" alt="logo">
@@ -47,7 +47,6 @@ export default {
   data () {
     return {
       drawer: true,
-      isFixed: false,
       isStock: false,
       toolbarMenu: [
         {
@@ -65,11 +64,26 @@ export default {
   methods: {
     close () {
       this.isStock = false
+    },
+    toolbar () {
+      let offset = window.pageYOffset;
+      const toolbar = document.querySelector('.toolbar')
+     if (offset >= 350 && !toolbar.classList.contains('fixed')) {
+       toolbar.classList.add('fixed');
+     } else if (offset <= 350 && toolbar.classList.contains('fixed')) {
+       toolbar.classList.remove('fixed');
+     }
     }
+  },
+  created () {
+    window.addEventListener('scroll', this.toolbar)
   },
   mounted () {
     const width = window.innerWidth;
     width <= 1024 ? this.drawer = false : this.drawer = true
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.toolbar)
   }
 };
 </script>
@@ -82,8 +96,28 @@ export default {
     color #000
     text-decoration none
 
+.fixed
+  position fixed
+  opacity .1
+  transition .5s ease
+  z-index 9
+  background-color #fff
+  animation fade 1s ease
+  &:hover
+    opacity 1
+
 .stock
   font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
   color red
   font-size responsive 1rem 1.6rem
+
+
+@keyframes fade {
+  from {
+    opacity 0
+  } to {
+    opacity .1
+  }
+}
+
 </style>

@@ -42,7 +42,7 @@
             title: 'О нас', scrollTo: '.about'
           },
           {
-            title: 'Контакты', scrollTo: '.coats'
+            title: 'Контакты', scrollTo: ''
           },
         ]
       }

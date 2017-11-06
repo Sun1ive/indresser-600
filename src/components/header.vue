@@ -5,11 +5,10 @@
         <v-layout class="LC" column justify-end>
           <h1>Верхняя одежда Осень-Зима 2017/2018</h1>
           <p>Вы ищете женственное и удобное платье или модное пальто? Тогда выбирайте наши практичные и стильные женские вещи</p>
-        </v-layout>
-        <v-layout class="LC" align-center>
+        </v-layout> 
+       <!-- <v-layout class="LC" align-center>
           <div class="myButton" @click="drawer = true">Смотреть коллекцию</div>
-          <!-- <a href="https://coats.indresser.com/coats.pdf" target="_blank" class="myButton" >Смотреть коллекцию</a> -->
-        </v-layout>
+        </v-layout> -->
         <div class="mouse"></div>
         <div class="mOne"></div>
         <div class="mTwo"></div>

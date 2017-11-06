@@ -1,9 +1,9 @@
 <template>
   <v-container fluid class="sContainer">
     <h2>Акция</h2>
-    <p>Первым 100 покупателям скидка 100 грн</p>
+    <p>Скидка на все товары 30%</p>
     <div class="close" @click="close"></div>
-    <div class="myButton mt-5" v-scroll-to="'.coats'" @click="close">Выбрать пальто</div>
+    <div class="myButton mt-5" v-scroll-to="'.discountForm'" @click="close">Введите данные</div>
   </v-container>
 </template>
 
