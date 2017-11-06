@@ -15,8 +15,8 @@
         </v-flex>
         <v-flex xs12 sm4 mg3 lg3>
           <ul class="phone">
-            <li>+380 98 020 2092</li>
-            <li>+380 98 020 2092</li>
+            <li><a href="tel">+380 98 020 2092</a></li>
+            <li><a href="tel">+380 73 020 2090</a></li>
           </ul>
         </v-flex>
       </v-layout>

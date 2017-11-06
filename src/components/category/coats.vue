@@ -33,8 +33,7 @@ export default {
     return {
       drawer: false,
       coats: [
-        '/static/slider/coatsLong/z.jpg'
-/*         '/static/slider/coatsLong/1.png',
+        '/static/slider/coatsLong/1.jpg',
         '/static/slider/coatsLong/2.jpg',
         '/static/slider/coatsLong/3.jpg',
         '/static/slider/coatsLong/4.jpg',
@@ -45,7 +44,7 @@ export default {
         '/static/slider/coatsLong/9.jpg',
         '/static/slider/coatsLong/10.jpg',
         '/static/slider/coatsLong/11.jpg',
-        '/static/slider/coatsLong/12.jpg', */
+        '/static/slider/coatsLong/12.jpg', 
       ]
     };
   },

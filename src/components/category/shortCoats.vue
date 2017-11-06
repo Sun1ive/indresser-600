@@ -4,8 +4,8 @@
        <v-layout align-center>
         <v-flex xs12 sm12 md6 lg6>
           <div class="flexWrapper">
-            <h2>Пальто</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis harum repellendus earum excepturi tempore illo labore reprehenderit pariatur! Iste, quam ullam repellendus qui quas minus voluptatem. Eaque accusantium esse unde.</p>
+            <h2>Пальто легкое</h2>
+            <p class="text-xs-center"></p>
             <img src="/static/img/shortCoat.jpg" alt="coat">
           </div>
         </v-flex>
