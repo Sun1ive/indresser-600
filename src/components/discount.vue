@@ -4,15 +4,12 @@
       <v-layout class="LC" justify-end align-center>
         <v-form class="form text-xs-center mr-4" @submit.prevent="submit">
           <h2>Получите скидку 30%</h2>
-          <v-text-field ref="input" style="color: #fff !important" v-model="userData.name" label="Ваше имя"></v-text-field>
-          <v-text-field ref="input" style="color: #fff !important" v-model="userData.phone" label="Ваш телефон"></v-text-field>
-          <v-text-field ref="input" style="color: #fff !important" v-model="userData.email" label="Ваш e-mail"></v-text-field>
+          <input type="text" placeholder="Введите Ваше имя" class="inputText">
+          <input type="text" placeholder="Введите Ваше имя" class="inputText">
+          <input type="text" placeholder="Введите Ваше имя" class="inputText">
           <button class="myButton" type="submit">Получить скидку</button>
         </v-form>
       </v-layout>
-      <!-- <div class="circle">
-        <div class="disc">30%</div>
-      </div> -->
     </v-container>
   </div>
 </template>
@@ -35,13 +32,15 @@
           phone: '',
           email: ''
         } */
-        console.log(this.$refs.input.$refs.input.offsetParent);
+        // console.log(this.$refs.input.$refs.input);
       }
     }
   }
 </script>
 
 <style scoped lang="stylus">
+
+
 .discountForm
   background-image url('/static/img/formbg.png')
   position relative
@@ -50,6 +49,16 @@
     color #fff
     .form
       font-family Gilroy-Light, Arial, Helvetica, sans-serif
+      display flex
+      flex-direction column
+      .inputText
+        border-bottom 1px solid #fff
+        padding 1rem 0 0 0.5rem
+        margin 1rem 0
+        color #fff
+        font-size responsive 1rem 1.4rem
+        &:focus
+          outline none
       h2
         font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
         font-size responsive 2rem 4rem
@@ -76,4 +85,6 @@
 @media (max-width 730px)
   .LC
     justify-content center
+    .form
+      margin-right 0 !important
 </style>

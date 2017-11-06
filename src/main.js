@@ -15,6 +15,7 @@ import {
 import './stylus/main.styl';
 import '../static/css/font-awesome.min.css';
 import Scroll from 'vue-scrollto';
+import axios from 'axios';
 
 import App from './App';
 
@@ -39,6 +40,7 @@ Vue.use(Scroll, {
   cancelable: true,
   easing: 'ease'
 });
+Vue.prototype.$http = axios;
 
 Vue.config.productionTip = false;
 

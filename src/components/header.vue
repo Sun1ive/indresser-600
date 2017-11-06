@@ -7,7 +7,7 @@
           <p>Вы ищете женственное и удобное платье или модное пальто? Тогда выбирайте наши практичные и стильные женские вещи</p>
         </v-layout>
         <v-layout class="LC" align-center>
-          <div class="myButton">Смотреть коллекцию</div>
+          <a href="https://coats.indresser.com/coats.pdf" target="_blank" class="myButton" >Смотреть коллекцию</a>
         </v-layout>
         <div class="mouse"></div>
       </v-container>
@@ -19,7 +19,6 @@
   export default {
     data () {
       return {
-
       }
     }
   }

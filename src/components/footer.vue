@@ -70,7 +70,7 @@ ul
 
 .footerMenu
   color #fff
-  font-size responsive
+  font-size responsive 1rem 1.3rem
   font-family Gilroy-Light, Arial, Helvetica, sans-serif
   li
     cursor pointer
