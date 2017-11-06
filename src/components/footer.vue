@@ -2,7 +2,7 @@
   <footer class="wrapper">
     <v-container fluid class="footer">
       <v-layout align-center>
-        <v-flex xs12 sm3 md2 lg1>
+        <v-flex xs12 sm2 md2 lg1>
           <ul class="socials">
             <li><a href="#" target="" class="fa fa-facebook"></a></li>
             <li><a href="#" target="" class="fa fa-instagram"></a></li>
@@ -54,7 +54,7 @@
 .footer
   background-color #202020
   .phone
-     font-size 1rem
+     font-size responsive .7rem 1rem
   .layout
     min-height 100px
 ul

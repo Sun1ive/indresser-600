@@ -46,6 +46,10 @@
       min-height 400px
     &:nth-child(2)
       min-height 200px
+    .myButton
+      color #000 !important
+      &:hover
+        color #fff !important
 
 @media (max-width: 1440px)
   .header

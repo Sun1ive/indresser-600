@@ -16,12 +16,6 @@
   </div>
 </template>
 
-<script>
-  export default {
-    
-  }
-</script>
-
 <style scoped lang="stylus">
 .coat
   background-image url('/static/img/coat.png')

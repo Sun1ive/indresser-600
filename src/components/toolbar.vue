@@ -2,9 +2,13 @@
   <div> 
   <v-navigation-drawer style="width: 170px" v-model="drawer">
       <v-list class="pt-0">
+      <v-list-tile @click="isStock = true">
+          <v-list-tile-content>
+            <v-list-tile-title class="stock">Акция</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
         <v-list-tile v-for="item in toolbarMenu" :key="item.title" @click="">
           <v-list-tile-content v-scroll-to="item.scrollTo">
-          <!-- <v-list-tile-content @click.stop="drawer = false" v-scroll-to="item.scrollTo"> -->
             <v-list-tile-title>{{ item.title }}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
@@ -23,15 +27,25 @@
         <a class="hidden-xs-only" href="tel:380680202090">+38 (068) 020 2090</a>
         <a class="hidden-xs-only" href="tel:380980202092">+38 (098) 020 2092</a>
     </v-toolbar>
+
+    <v-dialog class="test" v-model="isStock" max-width="500">
+      <app-stock @close="close"></app-stock>
+    </v-dialog>
    </div>
 </template>
 
 <script>
+import stock from './modals/stock'
+
 export default {
+  components: {
+    'app-stock': stock,
+  },
   data () {
     return {
       drawer: true,
       isFixed: false,
+      isStock: false,
       toolbarMenu: [
         {
           title: 'Пальто', scrollTo: '.coats'
@@ -45,9 +59,13 @@ export default {
       ]
     }
   },
+  methods: {
+    close () {
+      this.isStock = false
+    }
+  },
   mounted () {
-    let width = window.innerWidth;
-    console.log(width);
+    const width = window.innerWidth;
     width <= 1024 ? this.drawer = false : this.drawer = true
   }
 };
@@ -60,4 +78,9 @@ export default {
   a
     color #000
     text-decoration none
+
+.stock
+  font-weight bold
+  color red
+  font-size responsive 1rem 1.6rem
 </style>

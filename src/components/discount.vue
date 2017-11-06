@@ -4,10 +4,10 @@
       <v-layout class="LC" justify-end align-center>
         <v-form class="form text-xs-center mr-4" @submit.prevent="submit">
           <h2>Получите скидку 30%</h2>
-          <input type="text" placeholder="Введите Ваше имя" class="inputText">
-          <input type="text" placeholder="Введите Ваше имя" class="inputText">
-          <input type="text" placeholder="Введите Ваше имя" class="inputText">
-          <button class="myButton" type="submit">Получить скидку</button>
+          <input type="text" v-model.lazy="userData.name" required placeholder="Введите Ваше имя" class="inputText">
+          <input type="text" v-model.lazy="userData.name" required placeholder="Введите Ваш телефон" class="inputText">
+          <input type="text" v-model.lazy="userData.name" required placeholder="Введите Ваш e-mail" class="inputText">
+          <button class="myButton" type="submit">Отправить</button>
         </v-form>
       </v-layout>
     </v-container>
@@ -39,8 +39,6 @@
 </script>
 
 <style scoped lang="stylus">
-
-
 .discountForm
   background-image url('/static/img/formbg.png')
   position relative
@@ -64,6 +62,8 @@
         font-size responsive 2rem 4rem
       .myButton
         border-color #fff
+        font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
+        color #fff
 
 .circle
   width 300px
