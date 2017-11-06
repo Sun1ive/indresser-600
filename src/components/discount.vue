@@ -5,8 +5,8 @@
         <v-form class="form text-xs-center mr-4" @submit.prevent="submit">
           <h2>Получите скидку 30%</h2>
           <input type="text" v-model.lazy="userData.name" required placeholder="Введите Ваше имя" class="inputText">
-          <input type="text" v-model.lazy="userData.name" required placeholder="Введите Ваш телефон" class="inputText">
-          <input type="text" v-model.lazy="userData.name" required placeholder="Введите Ваш e-mail" class="inputText">
+          <input type="text" v-model.lazy="userData.phone" required placeholder="Введите Ваш телефон" class="inputText">
+          <input type="text" v-model.lazy="userData.email" required placeholder="Введите Ваш e-mail" class="inputText">
           <button class="myButton" type="submit">Отправить</button>
         </v-form>
       </v-layout>
@@ -57,6 +57,8 @@
         font-size responsive 1rem 1.4rem
         &:focus
           outline none
+        &::placeholder
+          color #fff
       h2
         font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
         font-size responsive 2rem 4rem

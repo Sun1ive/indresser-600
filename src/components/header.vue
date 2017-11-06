@@ -13,6 +13,7 @@
         <div class="mouse"></div>
         <div class="mOne"></div>
         <div class="mTwo"></div>
+        <div class="mThree"></div>
       </v-container>
       
     <v-dialog v-model="drawer" max-width="350">
@@ -49,10 +50,26 @@ import catalog from './modals/getCatalog'
   .mouse
     background-image url('/static/img/mouse.png')
     position absolute
-    left 17%
+    left 17.3%
     bottom 20%
     width 15px
     height 40px
+  .mOne
+  .mTwo
+  .mThree
+    background-image url('/static/img/right.svg')
+    width 20px
+    height 20px
+    position absolute
+    left 17.15%
+    bottom 17%
+    transform rotateZ(90deg)
+  .mTwo
+    bottom 15%
+    opacity .7
+  .mThree
+    bottom 13%
+    opacity .3
   h1
     font-size 4rem
     margin 1rem 0
