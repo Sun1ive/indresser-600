@@ -10,7 +10,7 @@
         </v-flex>
         <v-flex xs12 sm12 md6 lg6>
           <div class="flexWrapper">
-            <h2>Шерстяной жилет</h2>
+            <h2>Жилет прямой</h2>
             <p class="text-xs-center">Очень популярное решение для активных девушек. Двубортный ворот и пояс обманка смотрятся чрезвычайно женственно.</p>
             <img src="/static/img/jacket.jpg" alt="coat">
           </div>

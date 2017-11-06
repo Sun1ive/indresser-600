@@ -19,90 +19,110 @@
 </template>
 
 <script>
-import thanks from './modals/thanks'
-  export default {
-    components: {
-      'app-thanks': thanks,
-    },
-    data () {
-      return {
-        userData: {
-          name: '',
-          phone: null,
-          email: ''
-        },
-        drawer: false,
-        isDisabled: true,
-      }
-    },
-    methods: {
-      submit () {
-         this.$http.post('https://myvuewebapp.firebaseio.com/discount.json', this.userData)
-          .then(r => console.log(r))
-          .catch(e => console.log(e))
+import thanks from './modals/thanks';
+export default {
+  components: {
+    'app-thanks': thanks
+  },
+  data() {
+    return {
+      userData: {
+        name: '',
+        phone: null,
+        email: ''
+      },
+      drawer: false,
+      isDisabled: true
+    };
+  },
+  methods: {
+    submit() {
+      this.$http
+        .post('https://myvuewebapp.firebaseio.com/discount.json', this.userData)
+        .then(r => console.log(r))
+        .catch(e => console.log(e));
 
-       /*  Email.send(
+      Email.send(
         `coats@indresser.com`,
-        'sunliveua@gmail.com',
+        'info@indresser.com',
         'Заявка на скидку с сайта landing.indresser.com',
         `Пользователь: ${this.userData.name},
         Телефон: ${this.userData.phone}
         Почта: ${this.userData.email}`,
         'mail.adm.tools',
         'coats@indresser.com',
-        '3DLao3x1AC8t');
- */
+        '3DLao3x1AC8t'
+      );
 
-        this.drawer = true
+      this.drawer = true;
 
-        this.userData = {
-          name: '',
-          phone: '',
-          email: ''
-        }
-         
-      }
+      this.userData = {
+        name: '',
+        phone: '',
+        email: ''
+      };
     }
   }
+};
 </script>
 
 <style scoped lang="stylus">
-.discountForm
+.discountForm {
   // background-image url('/static/img/formbg.png')
-  background-image url('/static/img/formbg.jpg')
-  .LC
-    min-height 490px
-    color #fff
-    .form
-      font-family Gilroy-Light, Arial, Helvetica, sans-serif
-      display flex
-      flex-direction column
-      .inputText
-        border-bottom 1px solid #fff
-        padding 1rem 0 0 0.5rem
-        margin 1rem 0
-        color #fff
-        font-size responsive 1rem 1.4rem
-        &:focus
-          outline none
-        &::placeholder
-          color #fff
-      h2
-        font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
-        font-size responsive 2rem 4rem
-      .myButton
-        border-color #fff
-        font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
-        color #fff
+  background-image: url('/static/img/formbg.jpg');
 
+  .LC {
+    min-height: 490px;
+    color: #fff;
 
-@media (max-width 1100px)
-  .discountForm
-    background-position-x center
+    .form {
+      font-family: Gilroy-Light, Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
 
-@media (max-width 730px)
-  .LC
-    justify-content center
-    .form
-      margin-right 0 !important
+      .inputText {
+        border-bottom: 1px solid #fff;
+        padding: 1rem 0 0 0.5rem;
+        margin: 1rem 0;
+        color: #fff;
+        font-size: responsive 1rem 1.4rem;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: #fff;
+        }
+      }
+
+      h2 {
+        font-family: Gilroy-ExtraBold, Arial, Helvetica, sans-serif;
+        font-size: responsive 2rem 4rem;
+      }
+
+      .myButton {
+        border-color: #fff;
+        font-family: Gilroy-ExtraBold, Arial, Helvetica, sans-serif;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .discountForm {
+    background-position-x: center;
+  }
+}
+
+@media (max-width: 730px) {
+  .LC {
+    justify-content: center;
+
+    .form {
+      margin-right: 0 !important;
+    }
+  }
+}
 </style>
