@@ -5,7 +5,7 @@
         <v-flex xs12 sm12 md6 lg6>
           <div class="flexWrapper">
             <h2>Пальто легкое</h2>
-            <p class="text-xs-center"></p>
+            <p class="text-xs-center">Классическое пальто - это не скучно, если Вы улыбаетесь и идете уверенным шагом. Потому-что в нем вы будете себя чувствовать королевой!</p>
             <img src="/static/img/shortCoat.jpg" alt="coat">
           </div>
         </v-flex>

@@ -100,7 +100,6 @@ export default {
   position fixed
   opacity 1
   transition .5s ease
-  z-index 9
   background-color #fff
   // animation fade 1s ease
   &:hover
