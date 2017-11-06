@@ -22,6 +22,10 @@
     font-family Gilroy-Light, Arial, Helvetica, sans-serif
     font-size 1.1rem
 
+@media (max-width 1500px)
+  .LC
+    justify-content center
+
 @media (max-width: 1000px)
   .flex
     p

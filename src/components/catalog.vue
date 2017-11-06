@@ -36,6 +36,7 @@ import catalog from './modals/getCatalog'
 <style scoped lang="stylus">
 .catalog
   background-image url('/static/img/catalog.jpg')
+  background-size cover
   height 600px
   .LC
     color #fff

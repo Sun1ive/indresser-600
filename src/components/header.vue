@@ -89,6 +89,7 @@ import catalog from './modals/getCatalog'
 @media (max-width 1300px)
   .header
     background-image url('/static/img/header/header1280.png')
+    min-height 750px
 
 @media (max-width: 1024px)
   .header

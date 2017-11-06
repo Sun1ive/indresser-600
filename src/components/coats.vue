@@ -26,6 +26,21 @@
     &:nth-child(1)
       min-height 200px
       align-items flex-end
+  
+@media (max-width: 1440px)
+  .coat
+    .localWrapper
+      justify-content center
+      &:nth-child(1)
+        justify-content center
+        align-items center
+        h2
+          text-align center
+          color #fff
+      &:nth-child(2)
+        color #fff
+        text-align center
+        font-size responsive 1rem 1.3rem
 
 @media (max-width: 1000px)
   .localWrapper

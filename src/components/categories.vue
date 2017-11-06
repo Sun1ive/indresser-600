@@ -6,11 +6,11 @@
           <h2>Пальто</h2>
           <!-- <div class="myButton">Подробнее</div> -->
         </v-flex>
-        <v-flex xs12 sm4 lg3 v-scroll-to="'.jacket'">
-          <h2>Жилеты</h2>
-        </v-flex>
         <v-flex xs12 sm4 lg3 v-scroll-to="'.shortCoats'">
           <h2>Пальто</h2>
+        </v-flex>
+        <v-flex xs12 sm4 lg3 v-scroll-to="'.jacket'">
+          <h2>Жилеты</h2>
         </v-flex>
       </v-layout>
     </v-container>
