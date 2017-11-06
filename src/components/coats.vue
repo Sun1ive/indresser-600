@@ -10,7 +10,7 @@
         </v-flex>
       </v-layout>
       <v-layout class="localWrapper">
-        <div class="myButton">Смотреть коллекцию</div>
+        <!-- <div class="myButton">Смотреть коллекцию</div> -->
       </v-layout>
     </v-container>
   </div>
@@ -18,11 +18,19 @@
 
 <style scoped lang="stylus">
 .coat
-  background-image url('/static/img/coat.png')
+  background-image url('/static/img/coatbg.jpg')
   min-height 490px
   .localWrapper
     max-width 1000px
     margin-left auto
+    justify-content center
+    color #fff
+    .myButton
+      border-color #fff
+      &:hover
+        border-color #000
+    h2
+      text-align center
     &:nth-child(1)
       min-height 200px
       align-items flex-end
@@ -34,9 +42,6 @@
       &:nth-child(1)
         justify-content center
         align-items center
-        h2
-          text-align center
-          color #fff
       &:nth-child(2)
         color #fff
         text-align center

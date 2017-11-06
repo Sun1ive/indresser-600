@@ -36,13 +36,10 @@
             title: 'Жилеты', scrollTo: '.jacket'
           },
           {
-            title: 'Пальто', scrollTo: '.coats'
+            title: 'Пальто легкое', scrollTo: '.shortCoats'
           },
           {
             title: 'О нас', scrollTo: '.about'
-          },
-          {
-            title: 'Контакты', scrollTo: ''
           },
         ]
       }

@@ -20,7 +20,7 @@
   width 35px
   height 35px
   position absolute
-  bottom 10%
+  bottom 15%
   left 35%
   color #000
   transform rotateZ(-90deg)

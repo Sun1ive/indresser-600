@@ -2,9 +2,11 @@
   <header>
     <div class="wrapper">
       <v-container fluid class="header">
-        <v-layout class="LC" column justify-end>
-          <h1>Верхняя одежда Осень-Зима 2017/2018</h1>
-          <p>Вы ищете женственное и удобное платье или модное пальто? Тогда выбирайте наши практичные и стильные женские вещи</p>
+        <v-layout class="LC" align-center>
+          <v-flex sm10 lg5>
+            <h1>Верхняя одежда Осень-Зима 2017/2018</h1>
+            <p>Вы ищете женственное и удобное платье или модное пальто? Тогда выбирайте наши практичные и стильные женские вещи</p>
+          </v-flex>
         </v-layout> 
        <!-- <v-layout class="LC" align-center>
           <div class="myButton" @click="drawer = true">Смотреть коллекцию</div>
@@ -43,7 +45,7 @@ import catalog from './modals/getCatalog'
 
 <style scoped lang="stylus">
 .header
-  background url('/static/img/header/header.png')
+  background url('/static/img/header/1.png')
   background-repeat no-repeat
   background-position-x right
   min-height 1000px
@@ -72,13 +74,11 @@ import catalog from './modals/getCatalog'
     bottom 13%
     opacity .3
   h1
-    font-size 4rem
+    font-size responsive 3rem 4rem
     margin 1rem 0
   .LC
-    &:nth-child(1)
-      min-height 400px
-    &:nth-child(2)
-      min-height 200px
+    align-items center
+    min-height 800px
     .myButton
       color #000 !important
       &:hover
@@ -86,7 +86,6 @@ import catalog from './modals/getCatalog'
 
 @media (max-width: 1440px)
   .header
-    background-image url('/static/img/header/header1.png')
     h1
       font-size 3rem
       text-align center
@@ -95,30 +94,30 @@ import catalog from './modals/getCatalog'
       width 70%
       margin 0 auto
     .LC
-      &:nth-child(2)
-        justify-content center
+      min-height 790px
 
 @media (max-width 1350px)
   .header
-    background-image url('/static/img/header/gg.png')
-    min-height 789px
+    background-image url('/static/img/header/2.png')
+    // min-height 700px
 
-
-@media (max-width 1300px)
+@media (max-width: 1280px)
   .header
-    background-image url('/static/img/header/header1280.png')
-    min-height 750px
-
-@media (max-width: 1024px)
-  .header
-    background-image url('/static/img/header/header3.png')
+    background-image url('/static/img/header/3.png')
+    color #fff
+    background-size cover
+    .LC
+      justify-content center
 
 
 @media (max-width 600px)
   .header
-    background-image url('/static/img/header/header2.png')
-    min-height 600px
-    color #fff
+    background-image url('/static/img/header/4.png')
+    background-size cover
+    background-position center center
+    min-height 630px
+    .LC
+      min-height 600px
     h1
       font-size 2rem
     .mouse
