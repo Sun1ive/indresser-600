@@ -42,6 +42,8 @@
 </script>
 
 <style scoped lang="stylus">
+@import '../../stylus/custom'
+
 .catalogModal
   background-color #fff
   position relative
@@ -52,12 +54,5 @@
     align-items center
     flex-direction column
     padding 1rem
-  .close
-    width 25px
-    height 25px
-    background-image url('/static/img/close.svg')
-    top 5%
-    right 5%
-    position absolute
-    cursor pointer
+
 </style>

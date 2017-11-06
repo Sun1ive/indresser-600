@@ -18,6 +18,8 @@
 </script>
 
 <style scoped lang="stylus">
+@import '../../stylus/custom'
+
 .sContainer
   background-image url('/static/img/stock.jpg')
   background-size cover
@@ -34,13 +36,8 @@
     text-align center
     padding 1rem
   .close
-    background-image url('/static/img/close.svg');
-    width 25px
-    height 25px
-    position absolute
-    right 3%
     top 3%
-    cursor pointer
+    right 3%
 
 @media (max-width 430px)
   .sContainer

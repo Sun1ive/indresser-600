@@ -11,11 +11,19 @@
         </v-form>
       </v-layout>
     </v-container>
+    
+    <v-dialog max-width="200" v-model="drawer">
+      <app-thanks></app-thanks>
+    </v-dialog>
   </div>
 </template>
 
 <script>
+import thanks from './modals/thanks'
   export default {
+    components: {
+      'app-thanks': thanks,
+    },
     data () {
       return {
         userData: {
@@ -23,6 +31,7 @@
           phone: null,
           email: ''
         },
+        drawer: false,
         isDisabled: true,
       }
     },
@@ -44,13 +53,14 @@
         '3DLao3x1AC8t');
  */
 
-        alert('Спасибо за Ваш заказ!')
+        this.drawer = true
 
         this.userData = {
           name: '',
           phone: '',
           email: ''
-        } 
+        }
+         
       }
     }
   }

@@ -8,12 +8,13 @@
   </v-container>
 </template>
 
-<script>
-  export default {
-    
-  }
-</script>
-
 <style scoped lang="stylus">
+.flex
+  position relative
 
+h3
+  font-size responsive 1rem 1.5rem
+  background-color #fff
+  border-radius 8px
+  text-align center
 </style>
