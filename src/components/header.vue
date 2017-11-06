@@ -11,6 +11,8 @@
           <!-- <a href="https://coats.indresser.com/coats.pdf" target="_blank" class="myButton" >Смотреть коллекцию</a> -->
         </v-layout>
         <div class="mouse"></div>
+        <div class="mOne"></div>
+        <div class="mTwo"></div>
       </v-container>
       
     <v-dialog v-model="drawer" max-width="350">

@@ -10,7 +10,6 @@
           <button class="myButton" type="submit">Отправить</button>
         </v-form>
       </v-layout>
-      <div class="disc">-30%</div>
     </v-container>
   </div>
 </template>

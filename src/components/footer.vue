@@ -67,6 +67,15 @@ ul
     text-decoration none
     color #fff
     font-size responsive
+    transition .4s ease-in-out
+    &:hover
+      transition .4s ease-in-out
+      color red
+  li
+    transition .4s ease-in-out
+    &:hover
+      transition .4s ease-in-out
+      color red
 
 .footerMenu
   color #fff
@@ -74,10 +83,6 @@ ul
   font-family Gilroy-Light, Arial, Helvetica, sans-serif
   li
     cursor pointer
-    transition .4s ease-in-out
-    &:hover
-      transition .4s ease-in-out
-      color red
   
 @media (max-width 600px)
   .footer

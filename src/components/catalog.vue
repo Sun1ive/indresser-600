@@ -46,6 +46,8 @@ import catalog from './modals/getCatalog'
     .myButton
       color #fff
       border-color #fff
+      &:hover
+        border-color #000
 
 @media (max-width 1440px)
   .catalog
