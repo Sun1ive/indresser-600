@@ -70,13 +70,21 @@
     &:hover
       opacity .8
 
+@media (max-width 830px)
+  .orderForm
+    padding 1rem 3rem
+    .myButton
+      font-size responsive 1rem 1.2rem
+
+@media (max-width: 650px)
+  .flex
+    img
+      display none
+
 @media (max-width 430px)
   .orderForm
     padding 1rem 2rem
     min-height 300px
     .myButton
       margin-top 3rem
-  .flex
-    img
-      display none
 </style>

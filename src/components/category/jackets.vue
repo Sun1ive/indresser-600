@@ -8,7 +8,7 @@
             <div class="myButton" @click.stop="drawer = true">Купить</div>
           </v-carousel>
         </v-flex>
-        <v-flex xs12 sm6 md6 lg6>
+        <v-flex xs12 sm12 md6 lg6>
           <div class="flexWrapper">
             <h2>Жилеты</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis harum repellendus earum excepturi tempore illo labore reprehenderit pariatur! Iste, quam ullam repellendus qui quas minus voluptatem. Eaque accusantium esse unde.</p>

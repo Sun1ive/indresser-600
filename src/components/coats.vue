@@ -50,4 +50,7 @@
     text-align center
     .myButton
       border-color #fff
+    p
+      width 90%
+      margin 0 auto
 </style>
