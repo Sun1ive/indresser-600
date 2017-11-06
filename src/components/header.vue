@@ -100,8 +100,10 @@ import catalog from './modals/getCatalog'
   .header
     background-image url('/static/img/header/header2.png')
     min-height 600px
+    color #fff
     h1
       font-size 2rem
     .mouse
       display none
+
 </style>

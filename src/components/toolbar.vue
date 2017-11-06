@@ -18,6 +18,7 @@
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
+      <app-scroll></app-scroll>
     </v-navigation-drawer>
     <v-toolbar :fixed="isFixed">
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
@@ -36,10 +37,12 @@
 
 <script>
 import stock from './modals/stock'
+import scroll from './widgets/scrollTop'
 
 export default {
   components: {
     'app-stock': stock,
+    'app-scroll': scroll,
   },
   data () {
     return {

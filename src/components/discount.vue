@@ -42,14 +42,6 @@
 .discountForm
   // background-image url('/static/img/formbg.png')
   background-image url('/static/img/formbg.jpg')
-  position relative
-  .disc
-    font-size responsive 1rem 5rem
-    color red
-    position absolute
-    left 0%
-    top 50%
-    transform translate(-50%, -50%)
   .LC
     min-height 490px
     color #fff
@@ -72,6 +64,11 @@
         border-color #fff
         font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
         color #fff
+
+
+@media (max-width 1000px)
+  .discountForm
+    background-position-x center
 
 @media (max-width 730px)
   .LC

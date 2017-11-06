@@ -41,4 +41,8 @@
     right 3%
     top 3%
     cursor pointer
+
+@media (max-width 430px)
+  .sContainer
+    min-height 300px
 </style>

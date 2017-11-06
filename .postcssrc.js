@@ -6,5 +6,6 @@ module.exports = {
     "autoprefixer": {},
     "rucksack-css": {},
     "cssnano": {},
+    "postcss-cssnext": {},
   }
 }

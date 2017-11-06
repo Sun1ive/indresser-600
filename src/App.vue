@@ -4,6 +4,7 @@
     <app-header></app-header>
     <app-main></app-main>
     <app-footer></app-footer>
+
   </v-app>
 </template>
 
@@ -13,13 +14,12 @@ import header from './components/header'
 import footer from './components/footer'
 import main from './components/main'
 
-
   export default {
     components: {
       'app-toolbar': toolbar,
       'app-header': header,
       'app-main': main,
-      'app-footer': footer,
+      'app-footer': footer
     },
     data () {
       return {
