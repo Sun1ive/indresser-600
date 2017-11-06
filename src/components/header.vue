@@ -7,19 +7,32 @@
           <p>Вы ищете женственное и удобное платье или модное пальто? Тогда выбирайте наши практичные и стильные женские вещи</p>
         </v-layout>
         <v-layout class="LC" align-center>
-          <a href="https://coats.indresser.com/coats.pdf" target="_blank" class="myButton" >Смотреть коллекцию</a>
+          <div class="myButton" @click="drawer = true">Смотреть коллекцию</div>
+          <!-- <a href="https://coats.indresser.com/coats.pdf" target="_blank" class="myButton" >Смотреть коллекцию</a> -->
         </v-layout>
         <div class="mouse"></div>
       </v-container>
+      
+    <v-dialog v-model="drawer" max-width="350">
+      <app-catalog @closeForm="closeForm"></app-catalog>
+    </v-dialog>
     </div>
   </header>
 </template>
 
 <script>
+import catalog from './modals/getCatalog'
   export default {
+    components: {
+      'app-catalog': catalog
+    },
     data () {
       return {
+        drawer: false,
       }
+    },
+    methods: {
+      closeForm () {},
     }
   }
 </script>
@@ -64,6 +77,12 @@
     .LC
       &:nth-child(2)
         justify-content center
+
+@media (max-width 1350px)
+  .header
+    background-image url('/static/img/header/gg.png')
+    min-height 789px
+
 
 @media (max-width 1300px)
   .header

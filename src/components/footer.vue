@@ -1,11 +1,11 @@
 <template>
-  <footer class="wrapper">
+  <footer class="">
     <v-container fluid class="footer">
       <v-layout align-center>
         <v-flex xs12 sm2 md2 lg1>
           <ul class="socials">
-            <li><a href="#" target="" class="fa fa-facebook"></a></li>
-            <li><a href="#" target="" class="fa fa-instagram"></a></li>
+            <li><a href="https://facebook.com/indresser.clothing" target="_blank" class="fa fa-facebook"></a></li>
+            <li><a href="https://instagram.com/indresser" target="_blank" class="fa fa-instagram"></a></li>
           </ul>
         </v-flex>
         <v-flex xs12 sm6 md6 lg8>

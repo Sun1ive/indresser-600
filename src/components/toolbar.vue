@@ -80,7 +80,7 @@ export default {
     text-decoration none
 
 .stock
-  font-weight bold
+  font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
   color red
   font-size responsive 1rem 1.6rem
 </style>

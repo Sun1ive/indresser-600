@@ -10,6 +10,7 @@
           <button class="myButton" type="submit">Отправить</button>
         </v-form>
       </v-layout>
+      <div class="disc">-30%</div>
     </v-container>
   </div>
 </template>
@@ -40,8 +41,16 @@
 
 <style scoped lang="stylus">
 .discountForm
-  background-image url('/static/img/formbg.png')
+  // background-image url('/static/img/formbg.png')
+  background-image url('/static/img/formbg.jpg')
   position relative
+  .disc
+    font-size responsive 1rem 5rem
+    color red
+    position absolute
+    left 0%
+    top 50%
+    transform translate(-50%, -50%)
   .LC
     min-height 490px
     color #fff
@@ -64,23 +73,6 @@
         border-color #fff
         font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
         color #fff
-
-.circle
-  width 300px
-  height 300px
-  border-radius 50%
-  background #fff
-  position absolute
-  left 5%
-  top 50%
-  transform translate(-50%, -50%)
-  .disc
-    color red
-    position absolute
-    top 50%
-    left 50%
-    transform translate(-50%,-50%)
-    font-size 4rem
 
 @media (max-width 730px)
   .LC
