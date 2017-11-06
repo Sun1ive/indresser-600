@@ -23,6 +23,11 @@
           setTimeout(() => {
             window.open('https://dresses.indresser.com/catalog.pdf', '_blank');
           }, 200)
+
+          this.$http.post('https://myvuewebapp.firebaseio.com/catalog.json', this.email)
+            .then(r => console.log(r))
+            .catch(e => console.log(e));
+      
           this.email = '';
           this.$emit('closeForm');
         } else {

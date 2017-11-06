@@ -4,10 +4,10 @@
       <v-flex>
         <img src="/static/img/order.png" alt="">
       </v-flex>
-      <v-form class="orderForm">
+      <v-form class="orderForm" @submit.prevent="submit">
         <h2>Заполните заказ</h2>
         <v-text-field required v-model="userData.name" label="Ваше имя"></v-text-field>
-        <v-text-field required v-model="userData.phone" label="Ваш телефон"></v-text-field>
+        <v-text-field type="number" required v-model="userData.phone" label="Ваш телефон"></v-text-field>
         <button class="myButton">Оформить заказ</button>
         <div class="close" @click="close"></div>
       </v-form>
@@ -27,7 +27,25 @@
     },
     methods: {
       submit () {
-        alert(`submitted ${this.userData.name}`)
+/*       Email.send(
+        `coats@indresser.com`,
+        'sunliveua@gmail.com',
+        'Заказ с сайта landing.indresser.com',
+        `Пользователь: ${this.userData.name},
+        Почта: ${this.userData.email}`,
+        'mail.adm.tools',
+        'coats@indresser.com',
+        '3DLao3x1AC8t'); */
+      
+      this.$http.post('https://myvuewebapp.firebaseio.com/order.json', this.userData)
+        .then(r => console.log(r))
+        .catch(e => console.log(e))
+      
+      this.userData = {
+        name: '',
+        phone: '',
+      }
+      this.$emit('closeForm');
       },
       close () {
         this.$emit('closeForm');

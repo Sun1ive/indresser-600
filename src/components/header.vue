@@ -123,6 +123,10 @@ import catalog from './modals/getCatalog'
     h1
       font-size 2rem
     .mouse
+    .mOne
+    .mTwo
+    .mThree
       display none
+
 
 </style>
