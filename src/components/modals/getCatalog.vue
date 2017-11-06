@@ -6,6 +6,7 @@
         <button type="submit" class="myButton">Отправить</button>
       </v-form>
     </v-layout>
+      <div class="close" @click="closeForm"></div>
   </v-container>
 </template>
 
@@ -27,6 +28,9 @@
         } else {
           console.log(this.email);
         }
+      },
+      closeForm () {
+        this.$emit('closeForm');
       }
     }
   }
@@ -35,6 +39,7 @@
 <style scoped lang="stylus">
 .catalogModal
   background-color #fff
+  position relative
   .Form
     min-height 100px
     display flex
@@ -42,4 +47,12 @@
     align-items center
     flex-direction column
     padding 1rem
+  .close
+    width 25px
+    height 25px
+    background-image url('/static/img/close.svg')
+    top 5%
+    right 5%
+    position absolute
+    cursor pointer
 </style>

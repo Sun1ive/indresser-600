@@ -5,8 +5,8 @@
         <v-form class="form text-xs-center mr-4" @submit.prevent="submit">
           <h2>Получите скидку 30%</h2>
           <input type="text" v-model.lazy="userData.name" required placeholder="Введите Ваше имя" class="inputText">
-          <input type="text" v-model.lazy="userData.phone" required placeholder="Введите Ваш телефон" class="inputText">
-          <input type="text" v-model.lazy="userData.email" required placeholder="Введите Ваш e-mail" class="inputText">
+          <input type="number" v-model.lazy="userData.phone" required placeholder="Введите Ваш телефон" class="inputText">
+          <input type="email" v-model.lazy="userData.email" required placeholder="Введите Ваш e-mail" class="inputText">
           <button class="myButton" type="submit">Отправить</button>
         </v-form>
       </v-layout>
@@ -20,19 +20,37 @@
       return {
         userData: {
           name: '',
-          phone: '',
+          phone: null,
           email: ''
-        }
+        },
+        isDisabled: true,
       }
     },
     methods: {
       submit () {
-/*     this.userData = {
+         this.$http.post('https://myvuewebapp.firebaseio.com/discount.json', this.userData)
+          .then(r => console.log(r))
+          .catch(e => console.log(e))
+
+       /*  Email.send(
+        `coats@indresser.com`,
+        'sunliveua@gmail.com',
+        'Заявка на скидку с сайта landing.indresser.com',
+        `Пользователь: ${this.userData.name},
+        Телефон: ${this.userData.phone}
+        Почта: ${this.userData.email}`,
+        'mail.adm.tools',
+        'coats@indresser.com',
+        '3DLao3x1AC8t');
+ */
+
+        alert('Спасибо за Ваш заказ!')
+
+        this.userData = {
           name: '',
           phone: '',
           email: ''
-        } */
-        // console.log(this.$refs.input.$refs.input);
+        } 
       }
     }
   }
@@ -68,7 +86,7 @@
         color #fff
 
 
-@media (max-width 1000px)
+@media (max-width 1100px)
   .discountForm
     background-position-x center
 

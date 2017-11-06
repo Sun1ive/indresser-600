@@ -35,7 +35,9 @@ import catalog from './modals/getCatalog'
       }
     },
     methods: {
-      closeForm () {},
+      closeForm () {
+        this.drawer = false;
+      },
     }
   }
 </script>
