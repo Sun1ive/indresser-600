@@ -9,7 +9,7 @@
         </v-list-tile>
         <v-list-tile v-for="item in toolbarMenu" :key="item.title" @click="">
           <v-list-tile-content v-scroll-to="item.scrollTo">
-            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+            <v-list-tile-title class="test">{{ item.title }}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile @click="" class="mt-5">
@@ -50,13 +50,13 @@ export default {
       isStock: false,
       toolbarMenu: [
         {
-          title: 'Пальто', scrollTo: '.coats'
+          title: 'Пальто длинное', scrollTo: '.coats'
         },
         {
-          title: 'Жилет', scrollTo: '.jacket'
+          title: 'Жилет прямой', scrollTo: '.jacket'
         },
         {
-          title: 'Пальто', scrollTo: '.shortCoats'
+          title: 'Пальто легкое', scrollTo: '.shortCoats'
         },
       ]
     }
@@ -109,7 +109,7 @@ export default {
 .stock
   font-family Gilroy-ExtraBold, Arial, Helvetica, sans-serif
   color red
-  font-size responsive 1rem 1.6rem
+  font-size responsive 1.8rem 2.2rem
 
 
 @keyframes fade {

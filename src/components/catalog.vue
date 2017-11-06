@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper">
     <v-container fluid class="catalog">
-      <v-layout align-end class="LC">
-        <h2>Получить каталог</h2>
-      </v-layout>
-      <v-layout align-center class="LC">
+      <v-layout>
+        <v-flex xs12 sm4 lg6></v-flex>
+        <v-flex xs12 sm4 lg3></v-flex>
+        <v-flex xs12 sm4 lg3></v-flex>
         <div class="myButton" @click.stop="drawer = true">Заказать каталог</div>
       </v-layout>
     </v-container>
@@ -35,23 +35,27 @@ import catalog from './modals/getCatalog'
 
 <style scoped lang="stylus">
 .catalog
-  background-image url('/static/img/catalog.jpg')
-  background-size cover
-  height 600px
-  .LC
-    color #fff
-    &:nth-child(1)
-      min-height 300px
-    &:nth-child(2)
-      min-height 200px
+  .layout
+    position relative
+    min-height 500px
     .myButton
-      color #fff
-      border-color #fff
+      position absolute
+      top 50%
+      left 10%
+    .flex
+      transition .4s ease
+      position relative
+      overflow hidden
       &:hover
-        border-color #000
-
-@media (max-width 1440px)
-  .catalog
-    .LC
-      justify-content center
+        transform scale(1.1)
+        transition .4s ease
+      &:first-child
+        background-image url('/static/img/catalog/3.jpg')
+        background-size cover
+      &:nth-child(2)
+        background-image url('/static/img/catalog/2.jpg')
+        background-size cover
+      &:nth-child(3)
+        background-image url('/static/img/catalog/1.jpg')
+        background-size cover
 </style>

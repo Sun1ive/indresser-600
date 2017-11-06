@@ -4,7 +4,6 @@
       <v-layout>
         <v-flex xs12 sm4 lg6 v-scroll-to="'.coats'">
           <h2>Пальто</h2>
-          <!-- <div class="myButton">Подробнее</div> -->
         </v-flex>
         <v-flex xs12 sm4 lg3 v-scroll-to="'.shortCoats'">
           <h2>Пальто</h2>

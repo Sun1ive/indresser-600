@@ -32,7 +32,7 @@
   h2
     color red
   p
-    font-size responsive 1rem 2.5rem
+    font-size responsive 1.2rem 2.5rem
     text-align center
     padding 1rem
   .close

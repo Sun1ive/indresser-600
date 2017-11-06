@@ -30,7 +30,7 @@
       return {
         menu: [
           {
-            title: 'Пальто', scrollTo: '.coats'
+            title: 'Длинное пальто', scrollTo: '.coats'
           },
           {
             title: 'Жилеты', scrollTo: '.jacket'
