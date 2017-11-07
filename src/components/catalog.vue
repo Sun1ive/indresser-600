@@ -59,17 +59,27 @@ import catalog from './modals/getCatalog'
         background-image url('/static/img/catalog/1.jpg')
         background-size cover
 
+
+@media (max-width 1450px)
+  .catalog
+    .layout
+      .flex
+        &:first-child
+          background-position-x right
+
+
 @media (max-width 600px)
   .catalog
     .layout
       flex-direction column
       .flex
-        min-height 300px
+        min-height 400px
         background-size contain
         &:first-child
           background-image url('/static/img/catalog/3low.jpg')
       .myButton
         left 50%
+        top 95%
         transform translate(-50%, -50%)
         color #fff
         border-color #fff

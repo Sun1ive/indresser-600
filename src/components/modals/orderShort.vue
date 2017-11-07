@@ -32,7 +32,7 @@ export default {
         'info@indresser.com',
         'Заказ легкое пальто с сайта landing.indresser.com',
         `Пользователь: ${this.userData.name},
-        Почта: ${this.userData.email}`,
+        Почта: ${this.userData.phone}`,
         'mail.adm.tools',
         'coats@indresser.com',
         '3DLao3x1AC8t'

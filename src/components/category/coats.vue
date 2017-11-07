@@ -9,16 +9,13 @@
             <img src="/static/img/coat.jpg" alt="coat">
           </div>
         </v-flex>
-        <v-flex xs12 sm12 md6 lg6>
-<!--           <v-carousel hide-controls>
-            <v-carousel-item v-for="(item, i) in coats" :key="i" :src="item"></v-carousel-item>
-            <div class="myButton" @click.stop="drawer = true">Купить</div>
-          </v-carousel> -->
+        <v-flex class="sliderBox" xs12 sm12 md6 lg6>
           <slider  width="100%" :interval="6000" animation="fade" :speed="900" height="100%">
             <slider-item v-for="(item, i) in coats" :key="i">
               <img :src="item" alt="coat">
             </slider-item>
           </slider>
+            <div class="myButton" @click.stop="drawer = true">Купить</div>
         </v-flex>
       </v-layout>
     </v-container>
