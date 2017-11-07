@@ -7,10 +7,7 @@
             <h1>Верхняя одежда Осень-Зима 2017/2018</h1>
             <p>Иногда так и хочется надеть что-то сногсшибательное, что бы на тебя все обращали внимание и восторгались. У нас такое есть!</p>
           </v-flex>
-        </v-layout> 
-       <!-- <v-layout class="LC" align-center>
-          <div class="myButton" @click="drawer = true">Смотреть коллекцию</div>
-        </v-layout> -->
+        </v-layout>
         <div class="mouse"></div>
         <div class="mOne"></div>
         <div class="mTwo"></div>
@@ -89,7 +86,7 @@ import catalog from './modals/getCatalog'
 @media (max-width: 1440px)
   .header
     h1
-      font-size responsive 2.5rem 3rem
+      font-size responsive 2.5rem 2.6rem
       text-align center
     p
       text-align center

@@ -4,9 +4,9 @@
       <v-layout class="LC" justify-end align-center>
         <v-form class="form text-xs-center mr-4" @submit.prevent="submit">
           <h2>Получите скидку 30%</h2>
-          <input type="text" v-model.lazy="userData.name"  placeholder="Введите Ваше имя" class="inputText">
-          <input type="text" v-model.lazy="userData.phone"  placeholder="Введите Ваш телефон" class="inputText">
-          <input type="email" v-model.lazy="userData.email"  placeholder="Введите Ваш e-mail" class="inputText">
+          <input type="text" v-model.lazy="userData.name" required placeholder="Введите Ваше имя" class="inputText">
+          <input type="text" v-model.lazy="userData.phone" required placeholder="Введите Ваш телефон" class="inputText">
+          <input type="email" v-model.lazy="userData.email" required placeholder="Введите Ваш e-mail" class="inputText">
           <button class="myButton" type="submit">Отправить</button>
         </v-form>
       </v-layout>

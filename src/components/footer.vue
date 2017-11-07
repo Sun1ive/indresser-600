@@ -33,7 +33,7 @@
             title: 'Длинное пальто', scrollTo: '.coats'
           },
           {
-            title: 'Жилеты', scrollTo: '.jacket'
+            title: 'Жилет прямой', scrollTo: '.jacket'
           },
           {
             title: 'Пальто легкое', scrollTo: '.shortCoats'

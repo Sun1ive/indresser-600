@@ -7,7 +7,7 @@
       <v-form class="orderForm" @submit.prevent="submit">
         <h2>Заполните заказ</h2>
         <v-text-field required v-model="userData.name" label="Ваше имя"></v-text-field>
-        <v-text-field type="number" required v-model="userData.phone" label="Ваш телефон"></v-text-field>
+        <v-text-field type="text" required v-model="userData.phone" label="Ваш телефон"></v-text-field>
         <button class="myButton">Оформить заказ</button>
         <div class="close" @click="close"></div>
       </v-form>
@@ -27,6 +27,8 @@ export default {
   },
   methods: {
     submit() {
+      let validate = new RegExp('^[0-9]+$');
+      if (validate.test(this.userData.phone)) {
       Email.send(
         `coats@indresser.com`,
         'info@indresser.com',
@@ -48,6 +50,10 @@ export default {
         phone: ''
       };
       this.$emit('closeForm');
+      } else {
+        alert('Введите корректный номер');
+        this.userData.phone = '';
+      }
     },
     close() {
       this.$emit('closeForm');

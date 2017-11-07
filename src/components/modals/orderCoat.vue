@@ -27,6 +27,8 @@ export default {
   },
   methods: {
     submit() {
+      let validate = new RegExp('^[0-9]+$');
+      if (validate.test(this.userData.phone)) {
       Email.send(
         `coats@indresser.com`,
         'info@indresser.com',
@@ -48,6 +50,10 @@ export default {
         phone: ''
       };
       this.$emit('closeForm');
+      } else {
+        alert('ВВедите корректный номер');
+        this.userData.phone = '';
+      }
     },
     close() {
       this.$emit('closeForm');
