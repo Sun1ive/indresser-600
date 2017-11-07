@@ -60,7 +60,7 @@ import catalog from './modals/getCatalog'
         background-size cover
 
 
-@media (max-width 1450px)
+@media (max-width 1550px)
   .catalog
     .layout
       .flex
