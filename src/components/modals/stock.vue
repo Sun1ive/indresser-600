@@ -21,7 +21,8 @@
 @import '../../stylus/custom'
 
 .sContainer
-  background-image url('/static/img/stock.jpg')
+  // background-image url('/static/img/stock.jpg')
+  background-image url('../../assets/img/stock.jpg')
   background-size cover
   min-height 500px
   display flex

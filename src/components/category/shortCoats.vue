@@ -6,7 +6,8 @@
           <div class="flexWrapper">
             <h2>Пальто легкое</h2>
             <p class="text-xs-center">Классическое пальто - это не скучно, если Вы улыбаетесь и идете уверенным шагом. Потому-что в нем вы будете себя чувствовать королевой!</p>
-            <img src="/static/img/shortCoat.jpg" alt="coat">
+            <!-- <img src="/static/img/shortCoat.jpg" alt="coat"> -->
+            <img src="../../assets/img/shortCoat.jpg" alt="coat">
           </div>
         </v-flex>
         <v-flex class="sliderBox" xs12 sm12 md6 lg6>
@@ -60,5 +61,6 @@ export default {
 @import '../../stylus/category.styl'
 
 .flexWrapper
-  background-image url('/static/img/333.jpg')
+  // background-image url('/static/img/333.jpg')
+  background-image url('../../assets/img/333.jpg')
 </style>

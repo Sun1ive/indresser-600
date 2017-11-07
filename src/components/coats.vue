@@ -15,7 +15,8 @@
 
 <style scoped lang="stylus">
 .coat
-  background-image url('/static/img/coatbg.jpg')
+  // background-image url('/static/img/coatbg.jpg')
+  background-image url('../assets/img/coatbg.jpg')
   min-height 490px
   .localWrapper
     max-width 1000px

@@ -50,13 +50,16 @@ import catalog from './modals/getCatalog'
         transform scale(1.1)
         transition .4s ease
       &:first-child
-        background-image url('/static/img/catalog/3.jpg')
+        // background-image url('/static/img/catalog/3.jpg')
+        background-image url('../assets/img/catalog/3.jpg')
         background-size cover
       &:nth-child(2)
-        background-image url('/static/img/catalog/2.jpg')
+        // background-image url('/static/img/catalog/2.jpg')
+        background-image url('../assets/img/catalog/2.jpg')
         background-size cover
       &:nth-child(3)
-        background-image url('/static/img/catalog/1.jpg')
+        // background-image url('/static/img/catalog/1.jpg')
+        background-image url('../assets/img/catalog/1.jpg')
         background-size cover
 
 
@@ -76,7 +79,8 @@ import catalog from './modals/getCatalog'
         min-height 400px
         background-size contain
         &:first-child
-          background-image url('/static/img/catalog/3low.jpg')
+          // background-image url('/static/img/catalog/3low.jpg')
+          background-image url('../assets/img/catalog/3low.jpg')
       .myButton
         left 50%
         top 95%

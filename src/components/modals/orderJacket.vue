@@ -2,7 +2,8 @@
   <v-container fluid>
     <v-layout>
       <v-flex>
-        <img src="/static/img/order/jacket.jpg" alt="coat">
+        <!-- <img src="/static/img/order/jacket.jpg" alt="coat"> -->
+        <img src="../../assets/img/order/jacket.jpg" alt="coat">
       </v-flex>
       <v-form class="orderForm" @submit.prevent="submit">
         <h2>Заполните заказ</h2>

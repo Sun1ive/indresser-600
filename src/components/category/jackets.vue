@@ -14,7 +14,8 @@
           <div class="flexWrapper">
             <h2>Жилет прямой</h2>
             <p class="text-xs-center">Очень популярное решение для активных девушек. Двубортный ворот и пояс обманка смотрятся чрезвычайно женственно.</p>
-            <img src="/static/img/jacket.jpg" alt="coat">
+            <!-- <img src="/static/img/jacket.jpg" alt="coat"> -->
+            <img src="../../assets/img/jacket.jpg" alt="coat">
           </div>
         </v-flex>
       </v-layout>
@@ -61,7 +62,8 @@ export default {
 
 
 .flexWrapper
-  background-image url('/static/img/222.jpg')
+  // background-image url('/static/img/222.jpg')
+  background-image url('../../assets/img/222.jpg')
 
 @media (max-width 700px)
   .layout

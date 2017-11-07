@@ -42,7 +42,8 @@ import catalog from './modals/getCatalog'
 
 <style scoped lang="stylus">
 .header
-  background url('/static/img/header/1.png')
+  // background url('/static/img/header/1.png')
+  background-image url('../assets/img/header/1.png')
   background-repeat no-repeat
   background-position-x right
   min-height 1000px
@@ -50,7 +51,8 @@ import catalog from './modals/getCatalog'
   h1
     font-size responsive 3rem 4rem
   .mouse
-    background-image url('/static/img/mouse.png')
+    // background-image url('/static/img/mouse.png')
+    background-image url('../assets/img/mouse.png')
     position absolute
     left 17.3%
     bottom 20%
@@ -59,7 +61,8 @@ import catalog from './modals/getCatalog'
   .mOne
   .mTwo
   .mThree
-    background-image url('/static/img/right.svg')
+    // background-image url('/static/img/right.svg')
+    background-image url('../assets/img/right.svg')
     width 20px
     height 20px
     position absolute
@@ -97,12 +100,14 @@ import catalog from './modals/getCatalog'
 
 @media (max-width 1350px)
   .header
-    background-image url('/static/img/header/2.png')
+    // background-image url('/static/img/header/2.png')
+    background-image url('../assets/img/header/2.png')
     min-height 790px
 
 @media (max-width: 1280px)
   .header
-    background-image url('/static/img/header/3.png')
+    // background-image url('/static/img/header/3.png')
+    background-image url('../assets/img/header/3.png')
     color #fff
     background-size cover
     .LC
@@ -111,7 +116,8 @@ import catalog from './modals/getCatalog'
 
 @media (max-width 600px)
   .header
-    background-image url('/static/img/header/4.png')
+    // background-image url('/static/img/header/4.png')
+    background-image url('../assets/img/header/4.png')
     background-size cover
     background-position center center
     min-height 630px

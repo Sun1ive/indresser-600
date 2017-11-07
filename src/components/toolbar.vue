@@ -23,7 +23,8 @@
     <v-toolbar>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>
-        <img class="logo" src="/static/img/logo1.png" alt="logo">
+        <!-- <img class="logo" src="/static/img/logo1.png" alt="logo"> -->
+        <img class="logo" src="../assets/img/logo1.png" alt="logo">
       </v-toolbar-title>
         <a class="hidden-xs-only" href="tel:380680202090">+38 (068) 020 2090</a>
         <a class="hidden-xs-only" href="tel:380980202092">+38 (098) 020 2092</a>

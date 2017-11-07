@@ -6,7 +6,8 @@
           <div class="flexWrapper">
             <h2>Пальто длинное</h2>
             <p class="text-xs-center">Демисезонное пальто прямого кроя из мягкого кашемира - неизменная вещь в женском гардеробе. <br> А у Вас уже такое есть?</p>
-            <img src="/static/img/coat.jpg" alt="coat">
+            <!-- <img src="/static/img/coat.jpg" alt="coat"> -->
+            <img src="../../assets/img/coat.jpg" alt="coat">
           </div>
         </v-flex>
         <v-flex class="sliderBox" xs12 sm12 md6 lg6>
@@ -39,18 +40,18 @@ export default {
     return {
       drawer: false,
       coats: [
-        '/static/slider/coatsLong/1.jpg',
-        '/static/slider/coatsLong/2.jpg',
-        '/static/slider/coatsLong/3.jpg',
-        '/static/slider/coatsLong/4.jpg',
-        '/static/slider/coatsLong/5.jpg',
-        '/static/slider/coatsLong/6.jpg',
-        '/static/slider/coatsLong/7.jpg',
-        '/static/slider/coatsLong/8.jpg',
-        '/static/slider/coatsLong/9.jpg',
-        '/static/slider/coatsLong/10.jpg',
-        '/static/slider/coatsLong/11.jpg',
-        '/static/slider/coatsLong/12.jpg', 
+      '/static/slider/coatsLong/1.jpg',
+      '/static/slider/coatsLong/2.jpg',
+      '/static/slider/coatsLong/3.jpg',
+      '/static/slider/coatsLong/4.jpg',
+      '/static/slider/coatsLong/5.jpg',
+      '/static/slider/coatsLong/6.jpg',
+      '/static/slider/coatsLong/7.jpg',
+      '/static/slider/coatsLong/8.jpg',
+      '/static/slider/coatsLong/9.jpg',
+      '/static/slider/coatsLong/10.jpg',
+      '/static/slider/coatsLong/11.jpg',
+      '/static/slider/coatsLong/12.jpg',
       ]
     };
   },
@@ -66,7 +67,8 @@ export default {
 @import '../../stylus/category.styl'
 
 .flexWrapper
-  background-image url('/static/img/111.jpg')
+  // background-image url('/static/img/111.jpg')
+  background-image url('../../assets/img/111.jpg')
 
 
 </style>

@@ -16,7 +16,8 @@
 
 <style scoped lang="stylus">
 .scroll
-  background-image url('/static/img/right.svg')
+  background-image url('../../assets/img/right.svg')
+  // background-image url('/static/img/right.svg')
   width 35px
   height 35px
   position absolute
@@ -26,7 +27,8 @@
   transform rotateZ(-90deg)
   cursor pointer
   .scrollChild
-    background-image url('/static/img/right.svg')
+    background-image url('../../assets/img/right.svg')
+    // background-image url('/static/img/right.svg')
     width 35px
     height 35px
     position absolute

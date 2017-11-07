@@ -74,7 +74,8 @@ export default {
 
 <style scoped lang="stylus">
 .discountForm {
-  background-image: url('/static/img/formbg.jpg');
+  // background-image: url('/static/img/formbg.jpg');
+  background-image: url('../assets/img/formbg.jpg');
 
   .LC {
     min-height: 490px;
