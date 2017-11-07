@@ -67,4 +67,6 @@ export default {
 
 .flexWrapper
   background-image url('/static/img/111.jpg')
+
+
 </style>

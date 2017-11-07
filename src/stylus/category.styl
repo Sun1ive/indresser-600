@@ -5,11 +5,14 @@
     justify-content: center
     align-items: center
     flex-direction: column
-    min-height: 800px
+    min-height: 951px
     p
       width 60%
       margin 2rem 0
       font-size: responsive 1rem 1.4rem
+    img
+      width 100%
+      max-width: 90%
 
 .sliderBox
   position relative
@@ -25,9 +28,37 @@
 
 .slider
   min-width: 400px
-  min-height: 800px
+  min-height: 952px
   img
     width 100%
+
+@media (max-width 1600px)
+  .layout
+    .flexWrapper
+      min-height: 815px
+  .slider
+    min-height: 815px
+
+
+
+@media (max-width 1450px)
+  .slider
+    min-height: 800px
+
+
+@media (max-width 1050px)
+  .layout
+    min-height: 600px
+    .flexWrapper
+      min-height: 600px
+      h2
+        font-size: 2.5rem
+      p
+        font-size responsive 1rem 1.5rem
+        width 90%
+  .slider
+    min-height: 600px
+
 
 @media (max-width 700px)
   .layout

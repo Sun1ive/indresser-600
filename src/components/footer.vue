@@ -63,7 +63,7 @@ ul
   a
     text-decoration none
     color #fff
-    font-size responsive
+    font-size responsive 1rem 1.3rem
     transition .4s ease-in-out
     &:hover
       transition .4s ease-in-out

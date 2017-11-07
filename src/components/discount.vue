@@ -4,9 +4,9 @@
       <v-layout class="LC" justify-end align-center>
         <v-form class="form text-xs-center mr-4" @submit.prevent="submit">
           <h2>Получите скидку 30%</h2>
-          <input type="text" v-model.lazy="userData.name" required placeholder="Введите Ваше имя" class="inputText">
-          <input type="number" v-model.lazy="userData.phone" required placeholder="Введите Ваш телефон" class="inputText">
-          <input type="email" v-model.lazy="userData.email" required placeholder="Введите Ваш e-mail" class="inputText">
+          <input type="text" v-model.lazy="userData.name"  placeholder="Введите Ваше имя" class="inputText">
+          <input type="text" v-model.lazy="userData.phone"  placeholder="Введите Ваш телефон" class="inputText">
+          <input type="email" v-model.lazy="userData.email"  placeholder="Введите Ваш e-mail" class="inputText">
           <button class="myButton" type="submit">Отправить</button>
         </v-form>
       </v-layout>
@@ -28,7 +28,7 @@ export default {
     return {
       userData: {
         name: '',
-        phone: null,
+        phone: '',
         email: ''
       },
       drawer: false,
@@ -37,8 +37,10 @@ export default {
   },
   methods: {
     submit() {
-      this.$http
-        .post('https://myvuewebapp.firebaseio.com/discount.json', this.userData)
+      let validate = new RegExp('^[0-9]+$');
+      if (validate.test(this.userData.phone)) {
+
+      this.$http.post('https://myvuewebapp.firebaseio.com/discount.json', this.userData)
         .then(r => console.log(r))
         .catch(e => console.log(e));
 
@@ -56,11 +58,15 @@ export default {
 
       this.drawer = true;
 
-      this.userData = {
-        name: '',
-        phone: '',
-        email: ''
-      };
+        this.userData = {
+          name: '',
+          phone: '',
+          email: ''
+        };
+      } else {
+        alert('Пожалуйста Введите корректный номер телефона');
+        this.userData.phone = ''
+      }
     }
   }
 };
@@ -68,7 +74,6 @@ export default {
 
 <style scoped lang="stylus">
 .discountForm {
-  // background-image url('/static/img/formbg.png')
   background-image: url('/static/img/formbg.jpg');
 
   .LC {

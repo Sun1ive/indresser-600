@@ -8,7 +8,6 @@ import {
   VToolbar,
   VForm,
   VTextField,
-  VCarousel,
   VDialog,
   transitions
 } from 'vuetify';
@@ -28,7 +27,6 @@ Vue.use(Vuetify, {
     VToolbar,
     VForm,
     VTextField,
-    VCarousel,
     VDialog,
     transitions
   }

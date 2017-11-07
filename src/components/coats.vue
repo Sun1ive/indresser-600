@@ -4,13 +4,10 @@
       <v-layout class="localWrapper">
         <h2>Выбери свой Look</h2>
       </v-layout>
-      <v-layout class="localWrapper my-5">
+      <v-layout class="localWrapper">
         <v-flex sm12 sm10 md8 lg6>
           <p class="text-xs-center">На первом месте мы ставим качество и удобство. Женщина должна себя чувствовать в нем уверенно и комфортно, совершеннго не задумываясь все время о том, во что она одета...</p>
         </v-flex>
-      </v-layout>
-      <v-layout class="localWrapper">
-        <!-- <div class="myButton">Смотреть коллекцию</div> -->
       </v-layout>
     </v-container>
   </div>
@@ -59,4 +56,8 @@
       width 90%
       text-align center
       margin 0 auto
+
+@media (max-width 430px)
+  .coat
+    background-position-x 42%
 </style>

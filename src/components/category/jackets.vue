@@ -58,6 +58,8 @@ export default {
 
 <style scoped lang="stylus">
 @import '../../stylus/category.styl'
+
+
 .flexWrapper
   background-image url('/static/img/222.jpg')
 
