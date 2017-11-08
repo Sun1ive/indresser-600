@@ -2,8 +2,8 @@
   <v-container fluid>
     <v-layout>
       <v-flex>
-        <!-- <img src="/static/img/order/long.jpg" alt="coats"> -->
-        <img src="../../assets/img/order/long.jpg" alt="coats">
+        <img src="/static/img/long.jpg" alt="coats">
+        <!-- <img src="../../assets/img/order/long.jpg" alt="coats"> -->
       </v-flex>
       <v-form class="orderForm" @submit.prevent="submit">
         <h2>Заполните заказ</h2>
@@ -73,6 +73,7 @@ export default {
   img {
     width: 100%;
     height: 100%;
+    // min-width 450px
   }
 }
 
@@ -109,6 +110,13 @@ export default {
     }
   }
 }
+
+// @media (max-width 1024px)
+//   .orderForm
+//     padding 1rem 3rem 
+//   .flex
+//     img
+//       min-width 350px
 
 @media (max-width: 830px) {
   .orderForm {
