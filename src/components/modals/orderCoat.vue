@@ -25,17 +25,27 @@
         <v-select :items="payment" v-model="userData.payment" label="Способ оплаты"></v-select>
         <!-- <v-text-field required v-model="userData.email" label="Введите Ваш e-mail"></v-text-field> -->
         <v-text-field required v-model="userData.phone" label="Ваш телефон"></v-text-field>
-        <button class="myButton">Оформить заказ</button>
+        <button class="myButton">Подтвердить заказ</button>
         <div class="close" @click="close"></div>
       </v-form>
     </v-layout>
+    
+
+    <v-dialog max-width="700" v-model="drawer">
+      <app-thanks></app-thanks>
+    </v-dialog>
   </v-container>
 </template>
 
 <script>
+import thanks from './thanks'
 export default {
+  components: {
+    'app-thanks': thanks
+  },
   data() {
     return {
+      drawer: true,
       userData: {
         fullName: '',
         phone: '',
@@ -93,84 +103,8 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.formWrapper
-  padding 0 !important
+.orderForm
+  background-color #fff
+  padding 0 1rem
 
-
-.layout {
-  padding: 1rem;
-  background-color: #fff;
-}
-
-.flex {
-  img {
-    width: 100%;
-    height: 100%;
-    // min-width 450px
-  }
-}
-
-.orderForm {
-  width: 100%;
-  text-align: center;
-  padding: 1rem 2rem;
-  max-height: 400px;
-  position: relative;
-  font-size: responsive 1rem 2rem;
-
-  .myButton {
-    height: 50px;
-    // margin-top: 5rem;
-  }
-
-  h2 {
-    font-size: responsive 1rem 2rem;
-    padding 1rem 0
-  }
-
-  .close {
-    background-image: url('/static/img/close.svg');
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: 10px;
-    top: 10px;
-    opacity: 0.3;
-    cursor: pointer;
-    transition: 0.4s;
-
-    &:hover {
-      opacity: 0.8;
-    }
-  }
-}
-
-@media (max-width: 830px) {
-  .orderForm {
-    padding: 1rem 3rem;
-
-    .myButton {
-      font-size: responsive 1rem 1.2rem;
-    }
-  }
-}
-
-@media (max-width: 650px) {
-  .flex {
-    img {
-      display: none;
-    }
-  }
-}
-
-@media (max-width: 430px) {
-  .orderForm {
-    padding: 1rem 2rem;
-    min-height: 300px;
-
-    .myButton {
-      margin-top: 3rem;
-    }
-  }
-}
 </style>

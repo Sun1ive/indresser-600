@@ -1,9 +1,9 @@
 <template>
   <v-container fluid class="sContainer">
-    <h2>Акция</h2>
-    <p>Скидка на все товары 30%</p>
+    <h2>Успей купить</h2>
+    <p>Акция до 30.11 скидка 30% на всю верхнюю одежду от inDresser</p>
     <div class="close" @click="close"></div>
-    <div class="myButton mt-5" v-scroll-to="'.discountForm'" @click="close">Введите данные</div>
+    <div class="myButton mt-5" v-scroll-to="'.coats'" @click="close">Перейти к покупкам</div>
   </v-container>
 </template>
 
@@ -33,7 +33,7 @@
   h2
     color red
   p
-    font-size responsive 1.2rem 2.5rem
+    font-size responsive 1.2rem 2.2rem
     text-align center
     padding 1rem
   .close

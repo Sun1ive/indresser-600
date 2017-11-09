@@ -11,11 +11,13 @@
           </div>
         </v-flex>
         <v-flex class="sliderBox" xs12 sm12 md6 lg6>
-          <slider  width="100%" :interval="6000" animation="fade" :speed="900" height="100%">
+          <slider width="100%" :interval="4000" animation="fade" :speed="900" height="100%">
             <slider-item v-for="(item, i) in coats" :key="i">
               <img :src="item" alt="coat">
             </slider-item>
           </slider>
+            <div class="oldPrice"><s>2790 грн</s></div>
+            <div class="newPrice">1953 грн</div>
             <div class="myButton" @click.stop="drawer = true">Купить</div>
         </v-flex>
       </v-layout>
@@ -67,7 +69,6 @@ export default {
 @import '../../stylus/category.styl'
 
 .flexWrapper
-  // background-image url('/static/img/111.jpg')
   background-image url('../../assets/img/111.jpg')
 
 
