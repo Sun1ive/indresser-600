@@ -20,7 +20,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-    <v-dialog max-width="1000" v-model="drawer">
+    <v-dialog max-width="500" v-model="drawer">
       <app-order @closeForm="closeForm"></app-order>
     </v-dialog>
   </div>

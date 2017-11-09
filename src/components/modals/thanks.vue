@@ -13,8 +13,6 @@
 .flex
   position relative
   background-color #fff
-  background-image url('../../assets/img/thanks.png')
-  background-size cover
   h3
     font-size responsive 1rem 2.5rem
     padding-top 1rem
