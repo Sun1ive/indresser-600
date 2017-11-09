@@ -2,9 +2,9 @@
   <div class="wrapper">
     <v-container fluid class="catalog">
       <v-layout>
-        <v-flex xs12 sm4 lg6></v-flex>
-        <v-flex xs12 sm4 lg3></v-flex>
-        <v-flex xs12 sm4 lg3></v-flex>
+        <v-flex xs12 md4 lg6></v-flex>
+        <v-flex xs12 md4 lg3></v-flex>
+        <v-flex xs12 md4 lg3></v-flex>
         <div class="myButton" @click.stop="drawer = true">Заказать каталог</div>
       </v-layout>
     </v-container>

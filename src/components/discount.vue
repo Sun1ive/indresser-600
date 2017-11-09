@@ -72,10 +72,15 @@ export default {
     color red
     border-color #fff
 
+@media (max-width 1450px)
+  .discountForm
+    background-position-x center
+    .LC
+      justify-content center
+
 
 @media (max-width 450px)
   .discountForm
-    background-position-x center
     p
       text-align center
     .buttonWrapper

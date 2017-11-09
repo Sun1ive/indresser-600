@@ -2,13 +2,13 @@
   <div class="wrapper">
     <v-container fluid class="categories">
       <v-layout>
-        <v-flex xs12 sm4 lg6 v-scroll-to="'.coats'">
+        <v-flex xs12 lg6 v-scroll-to="'.coats'">
           <h2 class="text-md-center">Пальто длинное</h2>
         </v-flex>
-        <v-flex xs12 sm4 lg3 v-scroll-to="'.shortCoats'">
+        <v-flex xs12 lg3 v-scroll-to="'.shortCoats'">
           <h2 class="text-md-center">Пальто легкое</h2>
         </v-flex>
-        <v-flex xs12 sm4 lg3 v-scroll-to="'.jacket'">
+        <v-flex xs12 lg3 v-scroll-to="'.jacket'">
           <h2 class="text-md-center">Жилет прямой</h2>
         </v-flex>
       </v-layout>

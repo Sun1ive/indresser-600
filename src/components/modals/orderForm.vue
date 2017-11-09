@@ -58,8 +58,8 @@ export default {
       if (validate.test(this.userData.phone)) {
       Email.send(
         `coats@indresser.com`,
-        // 'info@indresser.com',
-        'sunliveua@gmail.com',
+        'info@indresser.com',
+        // 'sunliveua@gmail.com',
         'Заказ пальто с сайта landing.indresser.com',
         `Пользователь: ${this.userData.fullName},
         Заказал: ${this.item},
@@ -73,10 +73,10 @@ export default {
         '3DLao3x1AC8t'
       );
 
-      // this.$http
-      //   .post('https://myvuewebapp.firebaseio.com/order.json', this.userData)
-      //   .then(r => console.log(r))
-      //   .catch(e => console.log(e));
+      this.$http
+        .post('https://myvuewebapp.firebaseio.com/order.json', this.userData)
+        .then(r => console.log(r))
+        .catch(e => console.log(e));
 
       this.userData = {
         fullName: '',
