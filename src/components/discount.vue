@@ -2,27 +2,48 @@
   <div class="wrapper">
     <v-container fluid class="discountForm">
       <v-layout class="LC" justify-end align-center>
-        <v-form class="form text-xs-center mr-4" @submit.prevent="submit">
-          <h2>Получите скидку 30%</h2>
+          <div class="stockWrapper">
+            <h2>Успей купить !</h2>
+            <p>Акция до 30.11 скидка 30% на всю верхнюю одежду от inDresser</p>
+            <v-layout justify-space-around class="mt-4">
+              <div class="myButton Red" v-scroll-to="'.coats'">Перейти к покупкам</div>
+              <div class="myButton White" @click.stop="getCatalog">Посмотреть каталог</div>
+            </v-layout>
+          </div>
+
+
+
+       <!--  <v-form class="form text-xs-center mr-4" @submit.prevent="submit">
+          <h2>Получите скидку 30%</h2> 
           <input type="text" v-model.lazy="userData.name" required placeholder="Введите Ваше имя" class="inputText">
           <input type="text" v-model.lazy="userData.phone" required placeholder="Введите Ваш телефон" class="inputText">
           <input type="email" v-model.lazy="userData.email" required placeholder="Введите Ваш e-mail" class="inputText">
           <button class="myButton" type="submit">Отправить</button>
-        </v-form>
+        </v-form>-->
       </v-layout>
     </v-container>
     
-    <v-dialog max-width="200" v-model="drawer">
+
+
+    <!-- <v-dialog max-width="200" v-model="drawer">
       <app-thanks></app-thanks>
+    </v-dialog> -->
+
+    <v-dialog max-width="330" v-model="drawer">
+      <app-catalog @closeForm="closeForm"></app-catalog>
     </v-dialog>
+
+
   </div>
 </template>
 
 <script>
 import thanks from './modals/thanks';
+import catalog from './modals/getCatalog'
 export default {
   components: {
-    'app-thanks': thanks
+    'app-thanks': thanks,
+    'app-catalog': catalog,
   },
   data() {
     return {
@@ -36,6 +57,12 @@ export default {
     };
   },
   methods: {
+    getCatalog () {
+      this.drawer = true;
+    },
+    closeForm () {
+      this.drawer = false;
+    },
     submit() {
       let validate = new RegExp('^[0-9]+$');
       if (validate.test(this.userData.phone)) {
@@ -56,7 +83,7 @@ export default {
         '3DLao3x1AC8t'
       );
 
-      this.drawer = true;
+      // this.drawer = true;
 
         this.userData = {
           name: '',
@@ -73,6 +100,36 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+.stockWrapper
+  h2
+    text-transform uppercase
+    font-size responsive 3rem 5rem
+    text-align center
+  p
+    font-size responsive 1rem 2rem
+  .Red
+    background-color red
+    border-color red
+  .White
+    background-color #fff
+    color red
+    border-color #fff
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .discountForm {
   // background-image: url('/static/img/formbg.jpg');
   background-image: url('../assets/img/formbg.jpg');
@@ -105,13 +162,14 @@ export default {
       h2 {
         font-family: Gilroy-ExtraBold, Arial, Helvetica, sans-serif;
         font-size: responsive 2rem 4rem;
+        text-transform uppercase
       }
 
-      .myButton {
-        border-color: #fff;
-        font-family: Gilroy-ExtraBold, Arial, Helvetica, sans-serif;
-        color: #fff;
-      }
+      // .myButton {
+      //   border-color: #fff;
+      //   font-family: Gilroy-ExtraBold, Arial, Helvetica, sans-serif;
+      //   color: #fff;
+      // }
     }
   }
 }

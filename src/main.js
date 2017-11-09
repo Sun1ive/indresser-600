@@ -9,6 +9,7 @@ import {
   VForm,
   VTextField,
   VDialog,
+  VSelect,
   transitions
 } from 'vuetify';
 import './stylus/main.styl';
@@ -28,6 +29,7 @@ Vue.use(Vuetify, {
     VForm,
     VTextField,
     VDialog,
+    VSelect,
     transitions
   }
 });

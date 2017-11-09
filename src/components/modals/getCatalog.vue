@@ -41,13 +41,14 @@ export default {
           '3DLao3x1AC8t'
         );
 
-        this.email = '';
+        this.user.email = '';
         this.$emit('closeForm');
       } else {
         console.log(this.email);
       }
     },
     closeForm() {
+      this.user.email = '';
       this.$emit('closeForm');
     }
   }

@@ -1,14 +1,30 @@
 <template>
   <v-container fluid>
     <v-layout>
-      <v-flex>
+      <!-- <v-flex>
         <img src="/static/img/long.jpg" alt="coats">
-        <!-- <img src="../../assets/img/order/long.jpg" alt="coats"> -->
-      </v-flex>
+        <img src="../../assets/img/order/long.jpg" alt="coats"> 
+      </v-flex> -->
       <v-form class="orderForm" @submit.prevent="submit">
-        <h2>Заполните заказ</h2>
-        <v-text-field required v-model="userData.name" label="Ваше имя"></v-text-field>
-        <v-text-field type="number" required v-model="userData.phone" label="Ваш телефон"></v-text-field>
+        <h2>Купить пальто длинное</h2>
+
+        <v-layout class="formWrapper">
+          <v-flex class="mr-3">
+            <v-select :items="colors" v-model="userData.color" label="Цвет"></v-select>
+          </v-flex>
+          <v-flex>
+            <v-select :items="sizes" v-model="userData.size" label="Размер"></v-select>
+          </v-flex>
+        </v-layout>
+
+
+
+
+        <v-text-field required v-model="userData.name" label="Ваше имя и фамилия"></v-text-field>
+        <v-text-field required v-model="userData.adress" label="Адресс доставки"></v-text-field>
+        <v-select :items="payment" v-model="userData.payment" label="Способ оплаты"></v-select>
+        <!-- <v-text-field required v-model="userData.email" label="Введите Ваш e-mail"></v-text-field> -->
+        <v-text-field required v-model="userData.phone" label="Ваш телефон"></v-text-field>
         <button class="myButton">Оформить заказ</button>
         <div class="close" @click="close"></div>
       </v-form>
@@ -21,9 +37,17 @@ export default {
   data() {
     return {
       userData: {
-        name: '',
-        phone: ''
-      }
+        fullName: '',
+        phone: '',
+        email: '',
+        size: null,
+        color: null,
+        adress: '',
+        payment: '',
+      },
+      sizes: ['XS', 'S', 'M', 'XL'],
+      colors: ['Бежевый', 'Темно-зеленый', 'Изумрудный'],
+      payment: ['Наложенный платеж', 'На карту'],
     };
   },
   methods: {
@@ -34,8 +58,8 @@ export default {
         `coats@indresser.com`,
         'info@indresser.com',
         'Заказ пальто с сайта landing.indresser.com',
-        `Пользователь: ${this.userData.name},
-        Почта: ${this.userData.phone}`,
+        `Пользователь: ${this.userData.fullName},
+        Телефон: ${this.userData.phone}`,
         'mail.adm.tools',
         'coats@indresser.com',
         '3DLao3x1AC8t'
@@ -47,9 +71,14 @@ export default {
         .catch(e => console.log(e));
 
       this.userData = {
-        name: '',
-        phone: ''
+        fullName: '',
+        phone: '',
+        email: '',
+        size: null,
+        adress: '',
+        payment: ''
       };
+
       this.$emit('closeForm');
       } else {
         alert('ВВедите корректный номер');
@@ -64,6 +93,10 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+.formWrapper
+  padding 0 !important
+
+
 .layout {
   padding: 1rem;
   background-color: #fff;
@@ -80,18 +113,19 @@ export default {
 .orderForm {
   width: 100%;
   text-align: center;
-  padding: 1rem 6rem;
-  min-height: 400px;
+  padding: 1rem 2rem;
+  max-height: 400px;
   position: relative;
   font-size: responsive 1rem 2rem;
 
   .myButton {
     height: 50px;
-    margin-top: 5rem;
+    // margin-top: 5rem;
   }
 
   h2 {
-    font-size: responsive 1.5rem 3rem;
+    font-size: responsive 1rem 2rem;
+    padding 1rem 0
   }
 
   .close {
@@ -110,13 +144,6 @@ export default {
     }
   }
 }
-
-// @media (max-width 1024px)
-//   .orderForm
-//     padding 1rem 3rem 
-//   .flex
-//     img
-//       min-width 350px
 
 @media (max-width: 830px) {
   .orderForm {
