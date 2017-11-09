@@ -3,31 +3,15 @@
     <v-container fluid class="discountForm">
       <v-layout class="LC" justify-end align-center>
           <div class="stockWrapper">
-            <h2>Успей купить !</h2>
+            <h3>Успей купить !</h3>
             <p>Акция до 30.11 скидка 30% на всю верхнюю одежду от inDresser</p>
-            <v-layout justify-space-around class="mt-4">
+            <v-layout justify-space-around class="buttonWrapper mt-4">
               <div class="myButton Red" v-scroll-to="'.coats'">Перейти к покупкам</div>
               <div class="myButton White" @click.stop="getCatalog">Посмотреть каталог</div>
             </v-layout>
           </div>
-
-
-
-       <!--  <v-form class="form text-xs-center mr-4" @submit.prevent="submit">
-          <h2>Получите скидку 30%</h2> 
-          <input type="text" v-model.lazy="userData.name" required placeholder="Введите Ваше имя" class="inputText">
-          <input type="text" v-model.lazy="userData.phone" required placeholder="Введите Ваш телефон" class="inputText">
-          <input type="email" v-model.lazy="userData.email" required placeholder="Введите Ваш e-mail" class="inputText">
-          <button class="myButton" type="submit">Отправить</button>
-        </v-form>-->
       </v-layout>
     </v-container>
-    
-
-
-    <!-- <v-dialog max-width="200" v-model="drawer">
-      <app-thanks></app-thanks>
-    </v-dialog> -->
 
     <v-dialog max-width="330" v-model="drawer">
       <app-catalog @closeForm="closeForm"></app-catalog>
@@ -63,47 +47,20 @@ export default {
     closeForm () {
       this.drawer = false;
     },
-    submit() {
-      let validate = new RegExp('^[0-9]+$');
-      if (validate.test(this.userData.phone)) {
-
-      this.$http.post('https://myvuewebapp.firebaseio.com/discount.json', this.userData)
-        .then(r => console.log(r))
-        .catch(e => console.log(e));
-
-      Email.send(
-        `coats@indresser.com`,
-        'info@indresser.com',
-        'Заявка на скидку с сайта landing.indresser.com',
-        `Пользователь: ${this.userData.name},
-        Телефон: ${this.userData.phone}
-        Почта: ${this.userData.email}`,
-        'mail.adm.tools',
-        'coats@indresser.com',
-        '3DLao3x1AC8t'
-      );
-
-      // this.drawer = true;
-
-        this.userData = {
-          name: '',
-          phone: '',
-          email: ''
-        };
-      } else {
-        alert('Пожалуйста Введите корректный номер телефона');
-        this.userData.phone = ''
-      }
-    }
   }
 };
 </script>
 
 <style scoped lang="stylus">
+.discountForm
+  background-image: url('../assets/img/formbg.jpg')
+  .LC
+    min-height 450px
+    color #fff
 .stockWrapper
-  h2
+  h3
     text-transform uppercase
-    font-size responsive 3rem 5rem
+    font-size responsive 2.4rem 5rem
     text-align center
   p
     font-size responsive 1rem 2rem
@@ -116,77 +73,14 @@ export default {
     border-color #fff
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.discountForm {
-  // background-image: url('/static/img/formbg.jpg');
-  background-image: url('../assets/img/formbg.jpg');
-
-  .LC {
-    min-height: 490px;
-    color: #fff;
-
-    .form {
-      font-family: Gilroy-Light, Arial, Helvetica, sans-serif;
-      display: flex;
-      flex-direction: column;
-
-      .inputText {
-        border-bottom: 1px solid #fff;
-        padding: 1rem 0 0 0.5rem;
-        margin: 1rem 0;
-        color: #fff;
-        font-size: responsive 1rem 1.4rem;
-
-        &:focus {
-          outline: none;
-        }
-
-        &::placeholder {
-          color: #fff;
-        }
-      }
-
-      h2 {
-        font-family: Gilroy-ExtraBold, Arial, Helvetica, sans-serif;
-        font-size: responsive 2rem 4rem;
-        text-transform uppercase
-      }
-
-      // .myButton {
-      //   border-color: #fff;
-      //   font-family: Gilroy-ExtraBold, Arial, Helvetica, sans-serif;
-      //   color: #fff;
-      // }
-    }
-  }
-}
-
-@media (max-width: 1100px) {
-  .discountForm {
-    background-position-x: center;
-  }
-}
-
-@media (max-width: 730px) {
-  .LC {
-    justify-content: center;
-
-    .form {
-      margin-right: 0 !important;
-    }
-  }
-}
+@media (max-width 450px)
+  .discountForm
+    background-position-x center
+    p
+      text-align center
+    .buttonWrapper
+      flex-direction column
+      align-items center
+      .myButton
+        margin 1rem 0
 </style>

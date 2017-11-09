@@ -94,4 +94,10 @@ ul
         width 50vh
       .phone
         width 50vh
+
+// @media (max-width 450px)
+//   .socials
+//   .footerMenu
+//   .phone
+//     width 40vh
 </style>

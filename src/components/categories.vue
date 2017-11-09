@@ -40,17 +40,14 @@
         border-color #fff
         color #fff
       &:first-child
-        // background-image url('/static/img/categories/3.jpg')
         background-image url('../assets/img/categories/3.jpg')
         align-items center
       &:nth-child(2)
-        // background-image url('/static/img/categories/2.jpg')
         background-image url('../assets/img/categories/2.jpg')
         align-items flex-end
         h2
           margin-bottom 2rem
       &:last-child
-        // background-image url('/static/img/categories/1.jpg')
         background-image url('../assets/img/categories/1.jpg')
         align-items flex-end
         h2

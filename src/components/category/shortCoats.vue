@@ -6,7 +6,6 @@
           <div class="flexWrapper">
             <h2>Пальто легкое</h2>
             <p class="text-xs-center">Классическое пальто - это не скучно, если Вы улыбаетесь и идете уверенным шагом. Потому-что в нем вы будете себя чувствовать королевой!</p>
-            <!-- <img src="/static/img/shortCoat.jpg" alt="coat"> -->
             <img src="../../assets/img/shortCoat.jpg" alt="coat">
           </div>
         </v-flex>
@@ -16,6 +15,8 @@
               <img :src="item" alt="coat">
             </slider-item>
           </slider>
+            <div class="oldPrice"><s>1890 грн</s></div>
+            <div class="newPrice">1323 грн</div>
             <div class="myButton" @click.stop="drawer = true">Купить</div>
         </v-flex>
       </v-layout>
