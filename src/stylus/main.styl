@@ -6,6 +6,8 @@
 @import './wrapper'
 @import './slider'
 
+
+
 .footer
   position relative
   z-index: 8
@@ -70,3 +72,14 @@ h3
   .toolbar__content
   .toolbar__extension
     width 100%
+
+@media (max-width 430px)
+  .input-group label
+    font-size: 0.9rem
+    height 15px
+    line-height: 15px
+  .input-group
+    padding 13px 0 0 0
+    height 65px
+  .input-group--select .input-group__selections__comma
+    font-size: 0.9rem
