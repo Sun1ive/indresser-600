@@ -4,30 +4,22 @@
       <v-layout class="LC" justify-end align-center>
           <div class="stockWrapper">
             <h3>Успей купить !</h3>
-            <p>Акция до 30.11 скидка 30% на всю верхнюю одежду от inDresser</p>
+            <p>Акция до 08.03 скидка 20% на всю верхнюю одежду от inDresser</p>
             <v-layout justify-space-around class="buttonWrapper mt-4">
               <div class="myButton Red" v-scroll-to="'.coats'">Перейти к покупкам</div>
-              <div class="myButton White" @click.stop="getCatalog">Посмотреть каталог</div>
+              <a href="https://indresser.com" target="_blank" class="myButton White">Перейти на сайт</a>
             </v-layout>
           </div>
       </v-layout>
     </v-container>
-
-    <v-dialog max-width="330" v-model="drawer">
-      <app-catalog @closeForm="closeForm"></app-catalog>
-    </v-dialog>
-
-
   </div>
 </template>
 
 <script>
 import thanks from './modals/thanks';
-import catalog from './modals/getCatalog'
 export default {
   components: {
     'app-thanks': thanks,
-    'app-catalog': catalog,
   },
   data() {
     return {

@@ -25,23 +25,6 @@ export default {
         setTimeout(() => {
           window.open('https://landing.indresser.com/coats.pdf', '_blank');
         }, 200);
-
-        this.$http
-          .post('https://myvuewebapp.firebaseio.com/catalog.json', this.user)
-          .then(r => console.log(r))
-          .catch(e => console.log(e));
-
-        Email.send(
-          `coats@indresser.com`,
-          'info@indresser.com',
-          'Заказ каталога с сайта landing.indresser.com',
-          `Почта: ${this.user.email}`,
-          'mail.adm.tools',
-          'coats@indresser.com',
-          '3DLao3x1AC8t'
-        );
-
-        this.user.email = '';
         this.$emit('closeForm');
       } else {
         console.log(this.email);

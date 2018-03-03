@@ -68,15 +68,8 @@ export default {
         Адресс доставки: ${this.userData.address},
         Способ оплаты: ${this.userData.payment},
         Телефон: ${this.userData.phone}`,
-        'mail.adm.tools',
-        'coats@indresser.com',
-        '3DLao3x1AC8t'
+        { token: '805e5f04-ae07-4086-a4db-4132de5a3132' },
       );
-
-      this.$http
-        .post('https://myvuewebapp.firebaseio.com/order.json', this.userData)
-        .then(r => console.log(r))
-        .catch(e => console.log(e));
 
       this.userData = {
         fullName: '',

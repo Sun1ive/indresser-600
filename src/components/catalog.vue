@@ -5,7 +5,8 @@
         <v-flex xs12 md4 lg6></v-flex>
         <v-flex xs12 md4 lg3></v-flex>
         <v-flex xs12 md4 lg3></v-flex>
-        <div class="myButton" @click.stop="drawer = true">Заказать каталог</div>
+        <a href="https://indresser.com" class="myButton" target="_blank">Перейти на сайт</a>
+        <!-- <div class="myButton" @click.stop="drawer = true">Заказать каталог</div> -->
       </v-layout>
     </v-container>
     <v-dialog v-model="drawer" max-width="350">
@@ -50,15 +51,12 @@ import catalog from './modals/getCatalog'
         transform scale(1.1)
         transition .4s ease
       &:first-child
-        // background-image url('/static/img/catalog/3.jpg')
         background-image url('../assets/img/catalog/3.jpg')
         background-size cover
       &:nth-child(2)
-        // background-image url('/static/img/catalog/2.jpg')
         background-image url('../assets/img/catalog/2.jpg')
         background-size cover
       &:nth-child(3)
-        // background-image url('/static/img/catalog/1.jpg')
         background-image url('../assets/img/catalog/1.jpg')
         background-size cover
 

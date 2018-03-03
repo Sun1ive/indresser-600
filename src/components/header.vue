@@ -4,8 +4,8 @@
       <v-container fluid class="header">
         <v-layout class="LC" align-center>
           <v-flex sm10 lg5>
-            <h1>Верхняя одежда Осень-Зима 2017/2018</h1>
-            <p>Иногда так и хочется надеть что-то сногсшибательное, что бы на тебя все обращали внимание и восторгались. У нас такое есть!</p>
+            <h3>Успейте купить стильное весеннее пальто со скидкой до 20%</h3>
+            <p class="red--text offer">Акция действует до 08.03.2018</p>
           </v-flex>
         </v-layout>
         <div class="mouse"></div>
@@ -130,6 +130,11 @@ import catalog from './modals/getCatalog'
     .mTwo
     .mThree
       display none
+  .offer
+    font-size .8rem
 
+
+.offer
+  font-size 1.3rem
 
 </style>
