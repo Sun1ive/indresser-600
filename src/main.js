@@ -16,7 +16,6 @@ import {
 } from 'vuetify';
 import './stylus/main.styl';
 import '../static/css/font-awesome.min.css';
-import './registerServiceWorker.js';
 
 import App from './App';
 
@@ -42,7 +41,6 @@ Vue.use(Scroll, {
   easing: 'ease',
 });
 Vue.prototype.$http = axios;
-
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
