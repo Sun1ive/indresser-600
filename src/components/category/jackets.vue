@@ -9,7 +9,7 @@
             </slider-item>
           </slider>
             <div class="oldPrice"><s>2190 грн</s></div>
-            <div class="newPrice">1533 грн</div>
+            <div class="newPrice">1862 грн</div>
             <div class="myButton" @click.stop="drawer = true">Купить</div>
         </v-flex>
         <v-flex xs12 sm12 md6 lg6>

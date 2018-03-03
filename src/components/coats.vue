@@ -2,11 +2,11 @@
   <div class="wrapper">
     <v-container fluid class="coat">
       <v-layout class="localWrapper">
-        <h2>Выбери свой Look</h2>
+        <h2 class="shadow">Выбери свой Look</h2>
       </v-layout>
       <v-layout class="localWrapper">
         <v-flex sm12 sm10 md8 lg6>
-          <p class="text-xs-center">На первом месте мы ставим качество и удобство. Женщина должна себя чувствовать в нем уверенно и комфортно, совершеннго не задумываясь все время о том, во что она одета...</p>
+          <p class="text-xs-center shadow">На первом месте мы ставим качество и удобство. Женщина должна себя чувствовать в нем уверенно и комфортно, совершеннго не задумываясь все время о том, во что она одета...</p>
         </v-flex>
       </v-layout>
     </v-container>
@@ -15,7 +15,6 @@
 
 <style scoped lang="stylus">
 .coat
-  // background-image url('/static/img/coatbg.jpg')
   background-image url('../assets/img/coatbg.jpg')
   min-height 490px
   .localWrapper

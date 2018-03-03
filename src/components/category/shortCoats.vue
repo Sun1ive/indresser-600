@@ -15,8 +15,8 @@
               <img :src="item" alt="coat">
             </slider-item>
           </slider>
-            <div class="oldPrice"><s>1890 грн</s></div>
-            <div class="newPrice">1323 грн</div>
+            <div class="oldPrice"><s>1790 грн</s></div>
+            <div class="newPrice">1343 грн</div>
             <div class="myButton" @click.stop="drawer = true">Купить</div>
         </v-flex>
       </v-layout>

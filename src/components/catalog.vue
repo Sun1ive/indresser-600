@@ -9,9 +9,6 @@
         <!-- <div class="myButton" @click.stop="drawer = true">Заказать каталог</div> -->
       </v-layout>
     </v-container>
-    <v-dialog v-model="drawer" max-width="350">
-      <app-catalog @closeForm="closeForm"></app-catalog>
-    </v-dialog>
   </div>
 </template>
 

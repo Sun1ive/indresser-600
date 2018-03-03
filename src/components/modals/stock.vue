@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="sContainer">
     <h2>Успей купить</h2>
-    <p>Акция до 30.11 скидка 30% на всю верхнюю одежду от inDresser</p>
+    <p>Акция до 08.03 скидка 20% на всю верхнюю одежду от inDresser</p>
     <div class="close" @click="close"></div>
     <div class="myButton mt-5" v-scroll-to="'.coats'" @click="close">Перейти к покупкам</div>
   </v-container>

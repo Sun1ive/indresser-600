@@ -1,4 +1,6 @@
 import Vue from 'vue';
+import Scroll from 'vue-scrollto';
+import axios from 'axios';
 import {
   Vuetify,
   VApp,
@@ -10,12 +12,11 @@ import {
   VTextField,
   VDialog,
   VSelect,
-  transitions
+  transitions,
 } from 'vuetify';
 import './stylus/main.styl';
 import '../static/css/font-awesome.min.css';
-import Scroll from 'vue-scrollto';
-import axios from 'axios';
+import './registerServiceWorker.js';
 
 import App from './App';
 
@@ -30,15 +31,15 @@ Vue.use(Vuetify, {
     VTextField,
     VDialog,
     VSelect,
-    transitions
-  }
+    transitions,
+  },
 });
 Vue.use(Scroll, {
   container: 'body',
   duration: 500,
   offset: -70,
   cancelable: true,
-  easing: 'ease'
+  easing: 'ease',
 });
 Vue.prototype.$http = axios;
 
@@ -47,5 +48,5 @@ Vue.config.productionTip = false;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: h => h(App),
 });
